@@ -6,7 +6,186 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+      <h1 class="hidden">Интернет-магазин «Девайс»</h1>
+      <header> <!-- основная шапка сайта -->
+        <nav class="main-navigation">
+          <a class="logo-device"><img src="/image/icon/logo-device.svg" href="#"></a>
+            <ul class="login-navigation">
+              <li>
+                <form action="" method="get">
+                <input name="s" placeholder="Поиск по сайту" type="search">
+                <button type="submit">Найти</button>
+                </form>
+              </li>
+              <li>
+                <a href="#"> Войти</a>
+              </li>
+            </ul>
+            <ul class="cart-navigation">
+              <li>
+                <a href="#"> Сравнить</a>
+              </li>
+              <li>
+                <a href="#"> Корзина</a>
+              </li>
+            </ul>
+            <h3>Каталог товаров</h3>
+            <button type="submit">+</button>
+            <ul class="shop-info">
+              <li>
+                <a href="#"> Доставка</a>
+              </li>
+              <li>
+                <a href="#"> Гарантия</a>
+              </li>
+              <li>
+                <a href="#"> Контакты</a>
+              </li>
+            </ul>
+        </nav>
+
+      </header>
+    <main class="main-body">
+      <section class="drone-card">
+        <h2 class="hidden">Дрон</h2>
+        <img class="img-card" src="/image/content/drone.jpg" alt="Дрон">
+        <button class="slider-button slider-prev" type="button">
+          <span class="hidden">Предыдущее фото</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="hidden">Следующее фото</span>
+        </button>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="hidden">1 карточка</span>
+            </button>
+          </li>
+        </ol>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="hidden">2 карточка</span>
+            </button>
+          </li>
+        </ol>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="hidden">3 карточка</span>
+            </button>
+          </li>
+        </ol>
+        <span class="number-card">01</span>
+        <h3>Порхает как бабочка, жалит как пчела!</h3>
+        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+        <a href="#">Подробнее</a>
+        <table>
+          <tr>
+            <th>800 м</th>
+            <th>50 м</th>
+          </tr>
+          <tr>
+            <td>Дальность полета</td>
+            <td>Радиус поражения</td>
+          </tr>
+        </table>
+      </section>
+      <section class="fitness-tracker hidden">
+        <h2 class="hidden">Фитнес трекер</h2>
+        <img class="img-card" src="/image/content/fitness-tracker.png" alt="Фитнес трекер">
+        <button class="slider-button slider-prev" type="button">
+          <span class="hidden">Предыдущее фото</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="hidden">Следующее фото</span>
+        </button>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="hidden">1 карточка</span>
+            </button>
+          </li>
+        </ol>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="hidden">2 карточка</span>
+            </button>
+          </li>
+        </ol>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="hidden">3 карточка</span>
+            </button>
+          </li>
+        </ol>
+        <span class="number-card">02</span>
+        <h3>Худеем правильно!</h3>
+        <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+        <a href="#">Подробнее</a>
+        <table>
+          <tr>
+            <th>48 часов</th>
+            <th>Без подзарядки</th>
+          </tr>
+        </table>
+      </section>
+      <section class="selfie-stick hidden">
+        <h2 class="hidden">Селфи палка</h2>
+        <img class="img-card" src="image/content/selfie stick.png" alt="Дрон">
+        <button class="slider-button slider-prev" type="button">
+          <span class="hidden">Предыдущее фото</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="hidden">Следующее фото</span>
+        </button>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="hidden">1 карточка</span>
+            </button>
+          </li>
+        </ol>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="hidden">2 карточка</span>
+            </button>
+          </li>
+        </ol>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="hidden">3 карточка</span>
+            </button>
+          </li>
+        </ol>
+        <span class="number-card">03</span>
+        <h3>Делай селфи,<br>
+          как Бен Стиллер!</h3>
+        <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+        <a href="#">Подробнее</a>
+        <table>
+          <tr>
+            <th>8,5 м</th>
+            <th>Длина палки</th>
+          </tr>
+          <tr>
+            <td>5 кг</td>
+            <td>Вес палки</td>
+          </tr>
+          <tr>
+            <td>Карбон</td>
+            <td>Материал</td>
+          </tr>
+        </table>
+      </section>
+
+    </main>
+
+
 
   </body>
 </html>
