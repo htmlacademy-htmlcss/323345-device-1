@@ -7,7 +7,8 @@
   <body>
 
       <h1 class="hidden">Интернет-магазин «Девайс»</h1>
-      <header> <!-- основная шапка сайта -->
+      <!-- основная шапка сайта -->
+      <header>
         <nav class="main-navigation">
           <a class="logo-device"><img src="/image/icon/logo-device.svg" href="#"></a>
             <ul class="login-navigation">
@@ -31,6 +32,14 @@
             </ul>
             <h3>Каталог товаров</h3>
             <button type="submit">+</button>
+            <ul class="catalog hidden">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
             <ul class="shop-info">
               <li>
                 <a href="#"> Доставка</a>
@@ -46,9 +55,10 @@
 
       </header>
     <main class="main-body">
+      <!-- Карточки товаров -->
       <section class="drone-card">
         <h2 class="hidden">Дрон</h2>
-        <img class="img-card" src="/image/content/drone.jpg" alt="Дрон">
+        <img class="img-card" src="/image/content/drone.png" alt="Дрон">
         <button class="slider-button slider-prev" type="button">
           <span class="hidden">Предыдущее фото</span>
         </button>
@@ -182,10 +192,98 @@
           </tr>
         </table>
       </section>
-
+      <!-- Ссылки на категории товаров -->
+      <section class="product-navigation">
+        <ul>
+          <li class="product-link"><a href="#">Виртуальная реальность</a></li>
+          <li class="product-link"><a href="#">Моноподы для селфи</a></li>
+          <li class="product-link"><a href="#">Экшн-камеры</a></li>
+          <li class="product-link"><a href="#">Фитнес-браслеты</a></li>
+          <li class="product-link"><a href="#">Умные часы</a></li>
+          <li class="product-link"><a href="#">Квадрокоптеры</a></li>
+        </ul>
+      </section>
+      <section class="delivery">
+        <h2 class="hidden">Доставка</h2>
+        <ol>
+          <li><button class="delivery-option">Доставка</button></li>
+          <li><button class="guarantee">Гарантия</button></li>
+          <li><button class="credit">Кредит</button></li>
+        </ol>
+      </section>
+      <!-- серый фон? -->
+      <div>
+        <span class="background-card"></span>
+      </div>
+      <!-- Карточки Доставка/Гарантия/Кредит -->
+      <section class="delivery-card">
+        <h3>Доставка</h3>
+        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      </section>
+      <section class="guarantee-card">
+        <h3>Гарантия</h3>
+        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+      </section>
+      <section class="credit-card">
+        <h3>Кредит</h3>
+        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+      </section>
+      <!--кнопка доставки отдельно от section?-->
+      <button class="delivery-button"><span>Доставим редкий товар под заказ</span></button>
+      <section class="about-us">
+        <h3>О нас</h3>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+        <ul>
+          <li><a href="#"><b>Меловые линии</b></a></li>
+          <li><a href="#"><b>СДИК</b></a></li>
+          <li><a href="#"><b>ТоксБерри</b></a></li>
+        </ul>
+        <a href="#"><b>ПОДРОБНЕЕ О НАС</b></a>
+      </section>
+      <section class="contact">
+        <h3>Контакты</h3>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки. </p>
+        <p class="shop-name">Интернет-магазин «Девайс»</p>
+        <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+        <a href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
+        <dl>
+          <dt>Время работы</dt>
+            <dd>пн-пт: с 10:00 до 22:00</dd>
+            <dd>сб-вс: с 10:00 до 19:00</dd>
+        </dl>
+        <a href="#"><b>НАПИШИТЕ НАМ</b></a>
+      </section>
+      <section class="distribution">
+        <h3 class="distribution-h3">Подпишись на рассылку</h3>
+        <p class="distribution-text">Еженедельный дайджест с обзорами новинок,<br>
+          длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
+      </section>
+      <!-- форма ввода почты -->
+      <form action="#" method="post">
+        <label for="e-mail">Ваш логин</label>
+        <input type="text" name="login" id="e-mail">
+        <input type="submit" value="ПОДПИСАТЬСЯ">
+        <span class="free"><p>Это бесплатно</p></span>
     </main>
-
-
+    <footer>
+      <a class="logo-device"><img src="/image/content/logo-device-footer.png" href="#"></a>
+      <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+      <ol>
+        <li><a class="delivery-option" href="#">Доставка</a></li>
+        <li><a class="guarantee" href="#">Гарантия</a></li>
+        <li><a class="credit" href="#">Контакты</a></li>
+      </ol>
+      <a href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
+      <a class="logo-academy" href="https://htmlacademy.ru/"><img src="/image/content/logo-academy.png"</a>
+      <address>
+        <ul class="social-icons">
+          <li><a class="social-icons-telegram" href="https://t.me/htmlacademy"><img src="/image/icon/social-icons-telegram.png"></a></li>
+          <li><a class="social-icons-youtube" href="https://www.youtube.com/user/htmlacademyru"><img src="/image/icon/social-icons-youtube.png"></a></li>
+          <li><a class="social-icons-twitter" href="https://twitter.com/htmlacademy_ru"><img src="/image/icon/social-icons-twitter.png"></a></li>
+        </ul>
+      </address>
+    </footer>
 
   </body>
 </html>
