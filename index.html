@@ -10,44 +10,44 @@
       <!-- основная шапка сайта -->
       <header>
         <nav class="main-navigation">
-          <a class="logo-device"><img src="/image/icon/logo-device.svg" href="#"></a>
+          <a class="logo-device" href="#"><img src="/image/icon/logo-device.svg" alt="Логотип"></a>
             <ul class="login-navigation">
-              <li>
-                <form action="" method="get">
+              <li class="login-navigation-link">
+                <form action="https://echo.htmlacademy.ru/" method="get">
                 <input name="s" placeholder="Поиск по сайту" type="search">
                 <button type="submit">Найти</button>
                 </form>
               </li>
-              <li>
+              <li class="login-navigation-link">
                 <a href="#"> Войти</a>
               </li>
             </ul>
             <ul class="cart-navigation">
-              <li>
+              <li class="cart-navigation-link">
                 <a href="#"> Сравнить</a>
               </li>
-              <li>
+              <li class="cart-navigation-link">
                 <a href="#"> Корзина</a>
               </li>
             </ul>
             <h3>Каталог товаров</h3>
             <button type="submit">+</button>
             <ul class="catalog hidden">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
+              <li class="catalog-link"><a href="#">Виртуальная реальность</a></li>
+              <li class="catalog-link"><a href="#">Моноподы для селфи</a></li>
+              <li class="catalog-link"><a href="#">Экшн-камеры</a></li>
+              <li class="catalog-link"><a href="#">Фитнес-браслеты</a></li>
+              <li class="catalog-link"><a href="#">Умные часы</a></li>
+              <li class="catalog-link"><a href="#">Квадрокоптеры</a></li>
             </ul>
             <ul class="shop-info">
-              <li>
+              <li class="shop-info-link">
                 <a href="#"> Доставка</a>
               </li>
-              <li>
+              <li class="shop-info-link">
                 <a href="#"> Гарантия</a>
               </li>
-              <li>
+              <li class="shop-info-link">
                 <a href="#"> Контакты</a>
               </li>
             </ul>
@@ -144,7 +144,7 @@
       </section>
       <section class="selfie-stick hidden">
         <h2 class="hidden">Селфи палка</h2>
-        <img class="img-card" src="image/content/selfie stick.png" alt="Дрон">
+        <img class="img-card" src="/image/content/selfie-stick.png" alt="Селфи палка">
         <button class="slider-button slider-prev" type="button">
           <span class="hidden">Предыдущее фото</span>
         </button>
@@ -194,6 +194,7 @@
       </section>
       <!-- Ссылки на категории товаров -->
       <section class="product-navigation">
+        <h2 class="hidden">Каталог</h2>
         <ul>
           <li class="product-link"><a href="#">Виртуальная реальность</a></li>
           <li class="product-link"><a href="#">Моноподы для селфи</a></li>
@@ -230,23 +231,23 @@
       </section>
       <!--кнопка доставки отдельно от section?-->
       <button class="delivery-button"><span>Доставим редкий товар под заказ</span></button>
-      <section class="about-us">
+      <section class="about-us">  <!-- секция доставки -->
         <h3>О нас</h3>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-        <ul>
-          <li><a href="#"><b>Меловые линии</b></a></li>
-          <li><a href="#"><b>СДИК</b></a></li>
-          <li><a href="#"><b>ТоксБерри</b></a></li>
+        <ul class="delivery-select">
+          <li class="delivery-select-link"><a href="#"><b>Меловые линии</b></a></li>
+          <li class="delivery-select-link"><a href="#"><b>СДИК</b></a></li>
+          <li class="delivery-select-link"><a href="#"><b>ТоксБерри</b></a></li>
         </ul>
         <a href="#"><b>ПОДРОБНЕЕ О НАС</b></a>
       </section>
-      <section class="contact">
+      <section class="contact"> <!-- секция с контактами -->
         <h3>Контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки. </p>
         <p class="shop-name">Интернет-магазин «Девайс»</p>
         <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
-        <a href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
+        <a href="tel:tel:88128121212">+7 (812) 812-12-12</a>
         <dl>
           <dt>Время работы</dt>
             <dd>пн-пт: с 10:00 до 22:00</dd>
@@ -254,33 +255,33 @@
         </dl>
         <a href="#"><b>НАПИШИТЕ НАМ</b></a>
       </section>
-      <section class="distribution">
+      <section class="distribution"> <!-- секция рассылки -->
         <h3 class="distribution-h3">Подпишись на рассылку</h3>
         <p class="distribution-text">Еженедельный дайджест с обзорами новинок,<br>
           длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
-      </section>
       <!-- форма ввода почты -->
-      <form action="#" method="post">
-        <label for="e-mail">Ваш логин</label>
-        <input type="text" name="login" id="e-mail">
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <input type="text" name="e-mail" id="e-mail" placeholder="Ваш e-mail">
         <input type="submit" value="ПОДПИСАТЬСЯ">
-        <span class="free"><p>Это бесплатно</p></span>
+        <span class="free">Это бесплатно</span>
+      </form>
+      </section>
     </main>
     <footer>
-      <a class="logo-device"><img src="/image/content/logo-device-footer.png" href="#"></a>
+      <a class="logo-device" href="#"><img src="/image/content/logo-device-footer.png" alt="Логотип"></a>
       <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
       <ol>
         <li><a class="delivery-option" href="#">Доставка</a></li>
         <li><a class="guarantee" href="#">Гарантия</a></li>
         <li><a class="credit" href="#">Контакты</a></li>
       </ol>
-      <a href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
-      <a class="logo-academy" href="https://htmlacademy.ru/"><img src="/image/content/logo-academy.png"</a>
+      <a href="tel:88128121212">+7 (812) 812-12-12</a>
+      <a class="logo-academy" href="https://htmlacademy.ru/"><img src="/image/content/logo-academy.png" alt="Логотип академии"></a>
       <address>
         <ul class="social-icons">
-          <li><a class="social-icons-telegram" href="https://t.me/htmlacademy"><img src="/image/icon/social-icons-telegram.png"></a></li>
-          <li><a class="social-icons-youtube" href="https://www.youtube.com/user/htmlacademyru"><img src="/image/icon/social-icons-youtube.png"></a></li>
-          <li><a class="social-icons-twitter" href="https://twitter.com/htmlacademy_ru"><img src="/image/icon/social-icons-twitter.png"></a></li>
+          <li><a class="social-icons-telegram" href="https://t.me/htmlacademy"><img src="/image/icon/social-icons-telegram.png" alt="Иконка Телеграмма Академии"></a></li>
+          <li><a class="social-icons-youtube" href="https://www.youtube.com/user/htmlacademyru"><img src="/image/icon/social-icons-youtube.png" alt="Иконка Ютуба Академии"></a></li>
+          <li><a class="social-icons-twitter" href="https://twitter.com/htmlacademy_ru"><img src="/image/icon/social-icons-twitter.png" alt="Иконка Твиттера Академии"></a></li>
         </ul>
       </address>
     </footer>
