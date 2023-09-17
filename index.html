@@ -21,19 +21,21 @@
             </form>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link login-header-link" href="#">Войти</a>
+            <a class="navigation-link login-link" href="#">Войти</a>
           </li>
         </ul>
         <ul class="navigation-list cart-navigation">
           <li class="navigation-item">
-            <a class="navigation-link compare-header-link" href="#">Сравнить</a>
+            <a class="navigation-link camparison-link" href="#">Сравнить</a>
           </li>
           <li class="navigation-item">
-            <span class="cart-navigation-sum">2</span>
-            <a class="navigation-link cart-header-link" href="#">Корзина</a>
+            <div class="cart-items">
+              <span class="cart-navigation-sum">2</span>
+              <a class="navigation-link cart-link" href="#">Корзина</a>
+            </div>
           </li>
         </ul>
-        <button class="catalog-button" type="button">Каталог товаров</button>
+        <button class="catalog-button button-all" type="button">Каталог товаров</button>
         <ul class="navigation-list visually-hidden">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Виртуальная реальность</a>
@@ -98,7 +100,7 @@
           </li>
           <li class="card-slider-item">
             <div class="card-fitness-tracker visually-hidden">
-              <h2 class="visually-hidden">Карточка товара</h2>
+              <h3 class="visually-hidden">Карточка товара</h3>
               <img class="img-card" src="image/content/fitness-tracker-card.png" height="560" width="560" alt="Фитнес трекер">
               <span class="number-card">02</span>
               <h4 class="card-slider-title">Худеем правильно!</h4>
@@ -119,7 +121,7 @@
           </li>
           <li class="card-slider-item">
             <div class="selfie-stick visually-hidden">
-              <h2 class="visually-hidden">Карточка товара</h2>
+              <h3 class="visually-hidden">Карточка товара</h3>
               <img class="img-card" src="image/content/selfie-stick-card.png" height="560" width="560" alt="Селфи палка">
               <span class="number-card">03</span>
               <h4 class="card-slider-title">
@@ -227,7 +229,7 @@
       <section class="service">
         <h2 class="visually-hidden">Сервис</h2>
         <div class="service-buttons">
-          <ul>
+          <ul class="service-list">
             <li>
               <button class="service-item button-all" type="button">Доставка</button>
             </li>
@@ -242,7 +244,7 @@
         <!-- Карточки Доставка/Гарантия/Кредит -->
         <div class="service-cards service-delivery">
           <h3 class="service-title">Доставка</h3>
-          <p>
+          <p class="service-text">
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду
             совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
             ваш этаж.
@@ -250,14 +252,14 @@
         </div>
         <div class="service-cards service-guarantee visually-hidden">
           <h3 class="service-title">Гарантия</h3>
-          <p>
+          <p class="service-text">
             Если из-за возгорания купленного у нас товара у вас сгорит дом — не
             переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
           </p>
         </div>
         <div class="service-cards service-credit visually-hidden">
           <h3 class="service-title">Кредит</h3>
-          <p>
+          <p class="service-text">
             Залезть в долговую яму стало проще! Кредитные консультанты подберут
             для вас наиболее выгодные условия кредита. Выгодные для банка,
             разумеется.
@@ -266,7 +268,7 @@
       </section>
       <!-- отдельный див? -->
       <div class="delivery-order">
-        <button class="delivery-button" type="button">
+        <button class="delivery-button button-all" type="button">
           Доставим редкий товар под заказ
         </button>
       </div>
@@ -306,12 +308,12 @@
         </div>
         <!-- контакты -->
         <div class="contacts">
-          <h3 class="contacts-title">Контакты</h3>
+          <h3 class="about-us-title">Контакты</h3>
           <p>
             Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
             проверить работоспособность покупки.
           </p>
-          <p class="shop-name">Интернет-магазин «Девайс»</p>
+          <h4 class="contacts-subtitle">Интернет-магазин «Девайс»</h4>
           <address class="contacts-address">
             <p class="contacts-address-text">
               Санкт-Петербург, набережная реки Карповки, 5, литера П.
@@ -336,15 +338,15 @@
           спецпредложения и вот это вот всё.
         </p>
         <!-- форма ввода почты -->
-        <form class="email-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <input id="email" name="email" type="email" placeholder="Ваш e-mail">
-          <input type="submit" value="ПОДПИСАТЬСЯ">
+          <input class="button-all newsletter-button" type="submit" value="ПОДПИСАТЬСЯ">
         </form>
-        <span class="trigger-text">Это бесплатно</span>
+        <span class="newsletter-note">Это бесплатно</span>
       </section>
       <!-- Почтовая рассылка конец -->
     </main>
-    <footer>
+    <footer class="page-footer">
       <a class="logo-device" href="#">
         <img src="image/icon/logo-device-footer.svg" alt="Логотип">
         <span class="visually-hidden">Логотип</span>
@@ -361,25 +363,25 @@
           <a class="footer-nav-link" href="#">Контакты</a>
         </li>
       </ul>
-      <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="tel-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="logo-academy" href="https://htmlacademy.ru/">
         <img src="image/icon/html-academy.svg" alt="Логотип академии">
         <span class="visually-hidden">HTMLacademy</span>
       </a>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="footer-social-link" href="https://t.me/htmlacademy">
+          <a class="footer-social-link telegram-icon" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Перейти в Телеграмм</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="footer-social-link youtube-icon" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Перейти на Ютуб</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
-            <span class="visually-hidden">Перейти в Твиттер</span>
+          <a class="footer-social-link twitter-icon" href="https://twitter.com/htmlacademy_ru">
+            <span class="visually-hidden ">Перейти в Твиттер</span>
           </a>
         </li>
       </ul>
