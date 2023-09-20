@@ -91,7 +91,7 @@ body {
   padding-left: 0;
   padding-right: 7px;
   background-color: #FFE17F;
-  background: url(../image/icon/catalog-plus.svg) right center no-repeat;
+  background: url(../images/icon/catalog-plus.svg) right center no-repeat;
 }
 
 .search-header {
@@ -99,7 +99,7 @@ body {
   font-size: 16px;
   width: 359px;
   height: 40px;
-  background: url(../image/icon/search.svg) 16px center no-repeat;
+  background: url(../images/icon/search.svg) 16px center no-repeat;
   padding-left: 48px;
   border-radius: 20px 0 0 20px;
   border: 2px solid #000;
@@ -148,7 +148,7 @@ body {
   width: 20px;
   height: 60px;
   border: 0;
-  background-image: url(../image/icon/arrow-left.svg);
+  background-image: url(../images/icon/arrow-left.svg);
   background-repeat: no-repeat;
   background-color: #fff;
 }
@@ -157,7 +157,7 @@ body {
   width: 20px;
   height: 60px;
   border: 0;
-  background-image: url(../image/icon/arrow-right.svg);
+  background-image: url(../images/icon/arrow-right.svg);
   background-repeat: no-repeat;
   background-color: #fff;
 }
@@ -186,15 +186,15 @@ body {
   width: 452px;
 }
 .service-delivery {
-  background: url(../image/content/service-delivery.png) right no-repeat;
+  background: url(../images/content/service-delivery.png) right no-repeat;
 }
 
 .service-guarantee {
-  background: url(../image/content/service-guarantee.png) right center no-repeat;
+  background: url(../images/content/service-guarantee.png) right center no-repeat;
 }
 
 .service-credit {
-  background: url(../image/content/service-credit.png) right center no-repeat;
+  background: url(../images/content/service-credit.png) right center no-repeat;
 }
 
 .service-title,
@@ -216,20 +216,20 @@ body {
 .delivery-button {
   width: 1160px;
   height: 100px;
-  background: url(../image/icon/delivery-car.svg) 39px center no-repeat, url(../image/icon/i-info-black.svg) 1096px center no-repeat;
+  background: url(../images/icon/delivery-car.svg) 39px center no-repeat, url(../images/icon/i-info-black.svg) 1096px center no-repeat;
   font-size: 20px;
   letter-spacing: 4px;
   background-color: #F0F0F0;
 }
 
 .login-link {
-  background: url(../image/icon/user-black.svg) left center no-repeat;
+  background: url(../images/icon/user-black.svg) left center no-repeat;
   padding-left: 27px;
 }
 
 .camparison-link {
   padding-left: 22px;
-  background: url(../image/icon/compare-button.svg) left center no-repeat;
+  background: url(../images/icon/compare-button.svg) left center no-repeat;
 }
 
 .cart-items {
@@ -239,7 +239,7 @@ body {
 .cart-link {
   position: absolute;
   padding-left: 43px;
-  background: url(../image/icon/cart-button.svg) 15px center no-repeat;
+  background: url(../images/icon/cart-button.svg) 15px center no-repeat;
 }
 
 .cart-navigation-sum {
@@ -302,16 +302,16 @@ input[type="email"] {
 }
 
 .telegram-icon {
-  background-image: url(../image/icon/telegram.svg);
+  background-image: url(../images/icon/telegram.svg);
   background-repeat: no-repeat;
 }
 
 .youtube-icon {
-  background-image: url(../image/icon/youtube.svg);
+  background-image: url(../images/icon/youtube.svg);
   background-repeat: no-repeat;
 }
 
 .twitter-icon {
-  background-image: url(../image/icon/twitter.svg);
+  background-image: url(../images/icon/twitter.svg);
   background-repeat: no-repeat;
 }
