@@ -77,10 +77,10 @@
         <h2 class="visually-hidden">Навигационная цепочка</h2>
         <ul class="breadcrumbs-list">
          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
+            <a class="breadcrumbs-link breadcrumbs-arrow" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+            <a class="breadcrumbs-link breadcrumbs-arrow" href="#">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
@@ -96,46 +96,46 @@
             <h3 class="filter-title">Фильтр:</h3>
             <label class="filter-item" for="price-range">Стоимость</label>
             <input type="range" min="1" max="9000" value="5000" id="price-range">
-            <span>от 0</span>
-            <span>до 5000</span>
+            <span class="price-text">от 0</span>
+            <span class="price-text">до 5000</span>
             <p class="filter-item">Цвет</p>
             <ul>
-              <li>
-                <input type="checkbox" name="product-color" id="product-color-black" checked>
-                <label for="product-color-black">Черный</label>
+              <li class="color-list">
+                <input class="custom-checkbox" type="checkbox" name="product-color" id="product-color-black" checked>
+                <label  class="color-item" for="product-color-black">Черный</label>
               </li>
-              <li>
-                <input type="checkbox" name="product-color" id="product-color-white" checked>
-                <label for="product-color-white">Белый</label>
+              <li class="color-list">
+                <input class="custom-checkbox" type="checkbox" name="product-color" id="product-color-white" checked>
+                <label  class="color-item" for="product-color-white">Белый</label>
               </li>
-              <li>
-                <input type="checkbox" name="product-color" id="product-color-blue" >
-                <label for="product-color-blue">Синий</label>
+              <li class="color-list">
+                <input class="custom-checkbox" type="checkbox" name="product-color" id="product-color-blue" >
+                <label  class="color-item" for="product-color-blue">Синий</label>
               </li>
-              <li>
-                <input type="checkbox" name="product-color" id="product-color-red" >
-                <label for="product-color-red">Красный</label>
+              <li class="color-list">
+                <input class="custom-checkbox" type="checkbox" name="product-color" id="product-color-red" >
+                <label  class="color-item" for="product-color-red">Красный</label>
               </li>
-              <li>
-                <input type="checkbox" name="product-color" id="product-color-pink" >
-                <label for="product-color-pink">Розовый</label>
+              <li class="color-list">
+                <input class="custom-checkbox" type="checkbox" name="product-color" id="product-color-pink" >
+                <label  class="color-item" for="product-color-pink">Розовый</label>
               </li>
             </ul>
             <p class="filter-item">Bluetooth</p>
-            <label>
+            <label class="blutooth-item">
               <input type="radio" name="bluetooth-yes" checked>
               Есть
             </label>
-            <label>
+            <label class="blutooth-item">
               <input type="radio" name="bluetooth-no">
               Нет
             </label>
-            <button class="chose-send" type="submit">Показать</button>
+            <button class="button-all chose-send" type="submit">Показать</button>
           </form>
         </div>
         <div class="sort-container">
           <h3 class="filter-title">Сортировка:</h3>
-          <select name="product-type" id="product-type">
+          <select  class="popular-chose" name="product-type" id="product-type">
             <option value="popular" selected>Популярные</option>
             <option value="cheap">Недорогие</option>
             <option value="expensive">Дорогие</option>
@@ -179,37 +179,37 @@
               </div>
             </li>
           </ul>
-          <button class="upload-button" type="button">Загрузить еще</button>
+          <button class="button-all upload-button" type="button">Загрузить ещё</button>
           <div class="pagination">
-            <a class="pagination-prev" href="#">Назад</a>
+            <a class="pagination-link pagination-prev" href="#">Назад</a>
             <ul class="catalog-pagination">
               <li class="catalog-pagination-item">
-                <button class="catalog-pagination-button catalog-pagination-button-current" type="button">
-                  <span class="ctalog-pagination">1</span>
+                <button class="catalog-pagination-button" type="button">
+                  <span class="ctalog-pagination catalog-pagination-current">1</span>
                 </button>
               </li>
               <li class="catalog-pagination-item">
-                <button class="catalog-pagination-button catalog-pagination-button-current" type="button">
+                <button class="catalog-pagination-button" type="button">
                   <span class="ctalog-pagination">2</span>
                 </button>
               </li>
               <li class="catalog-pagination-item">
-                <button class="catalog-pagination-button catalog-pagination-button-current" type="button">
+                <button class="catalog-pagination-button" type="button">
                   <span class="ctalog-pagination">3</span>
                 </button>
               </li>
               <li class="catalog-pagination-item">
-                <button class="catalog-pagination-button catalog-pagination-button-current" type="button">
+                <button class="catalog-pagination-button" type="button">
                   <span class="ctalog-pagination">...</span>
                 </button>
               </li>
               <li class="catalog-pagination-item">
-                <button class="catalog-pagination-button catalog-pagination-button-current" type="button">
+                <button class="catalog-pagination-button" type="button">
                   <span class="ctalog-pagination">15</span>
                 </button>
               </li>
             </ul>
-            <a class="pagination-next" href="#">Вперед</a>
+            <a class="pagination-link pagination-next" href="#">Вперед</a>
           </div>
         </div>
       </section>
@@ -220,7 +220,11 @@
         <img src="images/icon/logo-device-footer.svg" width="145" height="36" alt="Логотип">
         <span class="visually-hidden">Логотип</span>
       </a>
-      <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+      <address class="contacts-address">
+        <p class="contacts-address-footer">
+          Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        </p>
+      </address>
       <ul class="footer-nav">
         <li class="footer-nav-item">
           <a class="footer-nav-link" href="#">Доставка</a>
@@ -232,7 +236,7 @@
           <a class="footer-nav-link" href="#">Контакты</a>
         </li>
       </ul>
-      <a class="tel-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="tel-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       <a class="logo-academy" href="https://htmlacademy.ru/">
         <img src="images/icon/html-academy.svg" width="115" height="33" alt="Логотип академии">
         <span class="visually-hidden">HTMLacademy</span>
