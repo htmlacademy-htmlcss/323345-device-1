@@ -59,9 +59,9 @@ body {
   padding-right: 36px;
   }
 
-.visually-hidden {
+/* .visually-hidden {
   display: none;
-}
+} */
 
 .product-link-img {
   object-fit: none;
@@ -123,6 +123,11 @@ body {
   margin: 0 0 0 -10px;
   background-color: #FFE17F;
 
+}
+
+.product-catalog {
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .number-card {
