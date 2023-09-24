@@ -91,6 +91,7 @@
       <!-- Каталог начало -->
       <section class="products">
         <h2 class="visually-hidden">Карточки товаров</h2>
+        <!-- Фильтры начало -->
         <div class="filter">
           <form action="https://echo.htmlacademy.ru/courses" method="get">
             <h3 class="filter-title">Фильтр:</h3>
@@ -133,6 +134,8 @@
             <button class="button-all chose-send" type="submit">Показать</button>
           </form>
         </div>
+        <!-- Фильтры конец -->
+        <!-- Сортировка начало  -->
         <div class="sort-container">
           <h3 class="filter-title">Сортировка:</h3>
           <select  class="popular-chose" name="product-type" id="product-type">
@@ -148,6 +151,8 @@
             <span class="visually-hidden">Следующие</span>
           </button>
         </div>
+        <!-- Сортировка конец  -->
+        <!-- Карточки товаров начало -->
         <div class="catalog">
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -179,6 +184,7 @@
               </div>
             </li>
           </ul>
+          <!-- Пагинация карточек товаров  -->
           <button class="button-all upload-button" type="button">Загрузить ещё</button>
           <div class="pagination">
             <a class="pagination-link pagination-prev" href="#">Назад</a>
@@ -211,10 +217,13 @@
             </ul>
             <a class="pagination-link pagination-next" href="#">Вперед</a>
           </div>
+          <!-- Пагинация карточек товара конец  -->
         </div>
+        <!-- Карточки товаров конец  -->
       </section>
       <!-- Каталог конец  -->
     </main>
+    <!-- Футер начало -->
     <footer class="page-footer">
       <a class="logo-device" href="#">
         <img src="images/icon/logo-device-footer.svg" width="145" height="36" alt="Логотип">
@@ -259,5 +268,6 @@
         </li>
       </ul>
     </footer>
+    <!-- Футер конец  -->
   </body>
 </html>
