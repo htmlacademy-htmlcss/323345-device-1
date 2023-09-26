@@ -24,8 +24,16 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 /* Общие стили */
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -41,29 +49,28 @@ body {
 }
 
 /* Прячем булеты у списков */
-.navigation-item,
-.shop-info-item,
-.footer-nav-item,
-.product-item,
-.slider-pagination-item,
-.card-slider-item,
-.service-list,
-.footer-nav-item,
-.footer-social-item,
-.contacts-timing,
-.catalog-item {
+.list-reset {
   list-style-type: none;
 }
 
 /* Скрыть спрятанные элементы */
 /* .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 } */
 
 .button-all {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
-  line-height: normal;
+  line-height: 21px;
   font-weight: 800;
   letter-spacing: 3.6px;
   text-decoration: none;
@@ -95,7 +102,7 @@ body {
   color: #000000;
   text-decoration: none;
   letter-spacing: 3.6px;
-  line-height: normal;
+  line-height: 21px;
   text-transform: uppercase;
 }
 
@@ -141,7 +148,6 @@ body {
 .cart-navigation-sum {
   width: 21px;
   height: 21px;
-  margin-right: -10px;
   border-radius: 50%;
   background-color: #fff;
   font-size: 14px;
@@ -163,10 +169,14 @@ body {
   line-height: 18px;
 }
 
+/*sticky-footer*/
+.main-body {
+  flex-grow: 1;
+}
+
 /* Слайдер товаров */
 .number-card {
   width: 100%;
-  height: 150px;
   font-size: 180px;
   font-weight: 700;
   font-style: normal;
@@ -341,7 +351,6 @@ input[type="email"] {
 
 .newsletter-note {
   width: 160px;
-  height: 30px;
   background: url(../images/icon/ok-icon-green.svg)  left center no-repeat;
   padding-left: 32px;
 }
@@ -354,7 +363,6 @@ input[type="email"] {
 
 .contacts-address-footer {
   width: 239px;
-  height: 40px;
   font-size: 16px;
   font-style: normal;
   line-height: 20px;
@@ -364,7 +372,7 @@ input[type="email"] {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
-  line-height: normal;
+  line-height: 21px;
   letter-spacing: 3.6px;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -379,13 +387,12 @@ input[type="email"] {
   background-color: #444444;
 }
 
-.footer-social-list{
+.footer-social-list {
   display: inline-flex;
 }
 
-.footer-social-link{
+.footer-social-link {
   width: 40px;
-  height: 40px;
   padding-left: 15px;
   display: block;
 }
@@ -435,7 +442,6 @@ input[type="email"] {
   color: #000000;
   background-color: #fff;
   width: 83px;
-  height: 20px;
   padding: 0 20px 0 16px;
 }
 
@@ -452,7 +458,7 @@ input[type="email"] {
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
-  line-height: normal;
+  line-height: 19px;
   letter-spacing: 3.2px;
   text-transform: uppercase;
   color: #000000;
@@ -470,7 +476,7 @@ input[type="email"] {
   opacity: 0.3;
 }
 
-.color-list {
+.color-list-item {
   list-style: none;
 }
 
@@ -481,12 +487,12 @@ input[type="email"] {
   color: #000000;
 }
 
-.chose-send,
+.choose-send,
 .sort-container {
   background-color: #EBEBEB;
 }
 
-.popular-chose{
+.popular-choose {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -495,7 +501,6 @@ input[type="email"] {
   color: #000000;
   background-color: #F0F0F0;
   width: 139px;
-  height: 30px;
   border: none;
 }
 
@@ -536,7 +541,7 @@ input[type="email"] {
 
 .pagination-link {
   font-weight: 800;
-  line-height: normal;
+  line-height: 21px;
   letter-spacing: 3.6px;
   text-transform: uppercase;
   text-decoration: none;
