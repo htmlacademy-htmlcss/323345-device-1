@@ -13,30 +13,51 @@
           <img src="images/icon/logo-device.svg" height="36" width="145" alt="Логотип Девайс">
           <span class="visually-hidden">Логотип</span>
         </a>
-        <ul class="navigation-list list-reset">
-          <li class="navigation-item login-navigation-link">
-            <form action="https://echo.htmlacademy.ru/" method="get">
-              <input class="search-header" name="search" placeholder="Поиск по сайту" type="search">
-              <button class="search-header-button" type="submit">Найти</button>
-            </form>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link login-link" href="#">Коля Петухов</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link logout-link" href="#"> Выйти</a>
-          </li>
-        </ul>
-        <ul class="navigation-list list-reset cart-navigation">
-          <li class="navigation-item">
-            <a class="navigation-link comparison-link" href="#">Сравнить</a>
-          </li>
-          <li class="navigation-item">
-            <span class="cart-navigation-sum">2</span>
-            <a class="navigation-link cart-link" href="#">Корзина</a>
-          </li>
-        </ul>
-        <button class="catalog-button button-all" type="button">Каталог товаров</button>
+        <div class="navigation-list-wrap">
+          <ul class="navigation-list list-reset login-list">
+            <li class="navigation-item login-navigation-link">
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                <input class="search-header" name="search" placeholder="Поиск по сайту" type="search">
+                <button class="search-header-button" type="submit">Найти</button>
+              </form>
+            </li>
+            <li class="navigation-item">
+              <ul class="navigation-list list-reset">
+                <li class="navigation-item">
+                  <a class="navigation-link login-link" href="#">Коля Петухов</a>
+                </li>
+                <li class="navigation-item logout-item">
+                  <a class="navigation-link logout-link" href="#">Выйти</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation-item">
+              <ul class="navigation-list list-reset cart-navigation">
+                <li class="navigation-item">
+                  <a class="navigation-link comparison-link" href="#">Сравнить</a>
+                </li>
+                <li class="navigation-item cart-item">
+                  <span class="cart-navigation-sum">2</span>
+                  <a class="navigation-link cart-link" href="#">Корзина</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="shop-info-wrap">
+          <button class="catalog-button button-all" type="button">Каталог товаров</button>
+          <ul class="list-reset shop-info-nav">
+            <li class="shop-info-item">
+              <a class="shop-info-link header-title-link" href="#"> Доставка</a>
+            </li>
+            <li class="shop-info-item">
+              <a class="shop-info-link header-title-link" href="#"> Гарантия</a>
+            </li>
+            <li class="shop-info-item">
+              <a class="shop-info-link header-title-link" href="#"> Контакты</a>
+            </li>
+          </ul>
+        </div>
         <ul class="navigation-list list-reset product-catalog visually-hidden">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Виртуальная реальность</a>
@@ -57,36 +78,27 @@
             <a class="navigation-link" href="#">Квадрокоптеры</a>
           </li>
         </ul>
-        <ul class="shop-info-nav list-reset">
-          <li class="shop-info-item">
-            <a class="shop-info-link header-title-link" href="#"> Доставка</a>
-          </li>
-          <li class="shop-info-item">
-            <a class="shop-info-link header-title-link" href="#"> Гарантия</a>
-          </li>
-          <li class="shop-info-item">
-            <a class="shop-info-link header-title-link" href="#"> Контакты</a>
-          </li>
-        </ul>
       </nav>
     </header>
-    <main>
-      <h1 class="catalog-title">Моноподы для селфи</h1>
-      <!-- Навигационная цепочка начало -->
-      <section class="breadcrumbs">
-        <h2 class="visually-hidden">Навигационная цепочка</h2>
-        <ul class="breadcrumbs-list list-reset">
-         <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link breadcrumbs-arrow" href="index.html">Главная</a>
-          </li>
+    <main class="main-body">
+      <div class="breadcrumbs-wrap">
+        <h1 class="catalog-title">Моноподы для селфи</h1>
+        <!-- Навигационная цепочка начало -->
+        <section class="breadcrumbs">
+          <h2 class="visually-hidden">Навигационная цепочка</h2>
+          <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link breadcrumbs-arrow" href="#">Каталог товаров</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
-          </li>
-        </ul>
-      </section>
+              <a class="breadcrumbs-link breadcrumbs-arrow" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link breadcrumbs-arrow" href="#">Каталог товаров</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
+            </li>
+          </ul>
+        </section>
+      </div>
       <!-- Навигационная цепочка конец  -->
       <!-- Каталог начало -->
       <section class="products">
@@ -135,97 +147,101 @@
           </form>
         </div>
         <!-- Фильтры конец -->
-        <!-- Сортировка начало  -->
-        <div class="sort-container">
-          <h3 class="filter-title">Сортировка:</h3>
-          <select  class="popular-choose" name="product-type" id="product-type">
-            <option value="popular" selected>Популярные</option>
-            <option value="cheap">Недорогие</option>
-            <option value="expensive">Дорогие</option>
-            <option value="new">Новые</option>
-          </select>
-          <button class="sort-prev" type="button">
-            <span class="visually-hidden">Предыдущие</span>
-          </button>
-          <button class="sort-next" type="button">
-            <span class="visually-hidden">Следующие</span>
-          </button>
-        </div>
-        <!-- Сортировка конец  -->
-        <!-- Карточки товаров начало -->
-        <div class="catalog">
-          <ul class="catalog-list list-reset">
-            <li class="catalog-item">
-              <div class="catalog-card">
-                <img class="catalog-img" src="images/product/selfie-stick-junior.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                <p class="catalog-product-name">Любительская селфи-палка</p>
-                <p class="catalog-product-price">500 &#8381;</p>
-              </div>
-            </li>
-            <li class="catalog-item">
-              <div class="catalog-card">
-                <img class="catalog-img" src="images/product/selfie-stick-pro.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                <p class="catalog-product-name">Профессиональная селфи-палка</p>
-                <p class="catalog-product-price">1500 &#8381;</p>
-              </div>
-            </li>
-            <li class="catalog-item">
-              <div class="catalog-card">
-                <img class="catalog-img" src="images/product/selfie-stick-waterproof.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                <p class="catalog-product-name">Непотопляемая селфи-палка</p>
-                <p class="catalog-product-price">2500 &#8381;</p>
-              </div>
-            </li>
-            <li class="catalog-item">
-              <div class="catalog-card">
-                <img class="catalog-img" src="images/product/selfie-stick-followme.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-                <p class="catalog-product-name">Селфи-палка «Следуй за мной»</p>
-                <p class="catalog-product-price">1500 &#8381;</p>
-              </div>
-            </li>
-          </ul>
-          <!-- Пагинация карточек товаров  -->
-          <button class="button-all upload-button" type="button">Загрузить ещё</button>
-          <div class="pagination">
-            <a class="pagination-link pagination-prev" href="#">Назад</a>
-            <ul class="catalog-pagination">
-              <li class="catalog-pagination-item">
-                <button class="catalog-pagination-button" type="button">
-                  <span class="ctalog-pagination catalog-pagination-current">1</span>
-                </button>
+        <div class="catalog-wrap">
+          <!-- Сортировка начало  -->
+          <div class="sort-container">
+            <h3 class="filter-title">Сортировка:</h3>
+            <select  class="popular-choose" name="product-type" id="product-type">
+              <option value="popular" selected>Популярные</option>
+              <option value="cheap">Недорогие</option>
+              <option value="expensive">Дорогие</option>
+              <option value="new">Новые</option>
+            </select>
+            <div class="sort-button-wrap">
+              <button class="sort-prev" type="button">
+                <span class="visually-hidden">Предыдущие</span>
+              </button>
+              <button class="sort-next" type="button">
+                <span class="visually-hidden">Следующие</span>
+              </button>
+            </div>
+          </div>
+          <!-- Сортировка конец  -->
+          <!-- Карточки товаров начало -->
+          <div class="catalog">
+            <ul class="catalog-list">
+              <li class="catalog-item list-reset">
+                <div class="catalog-card">
+                  <img class="catalog-img" src="images/product/selfie-stick-junior.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                  <p class="catalog-product-name">Любительская селфи-палка</p>
+                  <p class="catalog-product-price">500 &#8381;</p>
+                </div>
               </li>
-              <li class="catalog-pagination-item">
-                <button class="catalog-pagination-button" type="button">
-                  <span class="ctalog-pagination">2</span>
-                </button>
+              <li class="catalog-item list-reset">
+                <div class="catalog-card">
+                  <img class="catalog-img" src="images/product/selfie-stick-pro.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                  <p class="catalog-product-name">Профессиональная селфи-палка</p>
+                  <p class="catalog-product-price">1500 &#8381;</p>
+                </div>
               </li>
-              <li class="catalog-pagination-item">
-                <button class="catalog-pagination-button" type="button">
-                  <span class="ctalog-pagination">3</span>
-                </button>
+              <li class="catalog-item list-reset">
+                <div class="catalog-card">
+                  <img class="catalog-img" src="images/product/selfie-stick-waterproof.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                  <p class="catalog-product-name">Непотопляемая селфи-палка</p>
+                  <p class="catalog-product-price">2500 &#8381;</p>
+                </div>
               </li>
-              <li class="catalog-pagination-item">
-                <button class="catalog-pagination-button" type="button">
-                  <span class="ctalog-pagination">...</span>
-                </button>
-              </li>
-              <li class="catalog-pagination-item">
-                <button class="catalog-pagination-button" type="button">
-                  <span class="ctalog-pagination">15</span>
-                </button>
+              <li class="catalog-item list-reset">
+                <div class="catalog-card">
+                  <img class="catalog-img" src="images/product/selfie-stick-followme.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                  <p class="catalog-product-name">Селфи-палка «Следуй за мной»</p>
+                  <p class="catalog-product-price">1500 &#8381;</p>
+                </div>
               </li>
             </ul>
-            <a class="pagination-link pagination-next" href="#">Вперед</a>
+            <!-- Пагинация карточек товаров  -->
+            <button class="button-all upload-button" type="button">Загрузить ещё</button>
+            <div class="pagination">
+              <a class="pagination-link pagination-prev" href="#">Назад</a>
+              <ul class="catalog-pagination">
+                <li class="catalog-pagination-item">
+                  <button class="catalog-pagination-button" type="button">
+                    <span class="ctalog-pagination catalog-pagination-current">1</span>
+                  </button>
+                </li>
+                <li class="catalog-pagination-item">
+                  <button class="catalog-pagination-button" type="button">
+                    <span class="ctalog-pagination">2</span>
+                  </button>
+                </li>
+                <li class="catalog-pagination-item">
+                  <button class="catalog-pagination-button" type="button">
+                    <span class="ctalog-pagination">3</span>
+                  </button>
+                </li>
+                <li class="catalog-pagination-item">
+                  <button class="catalog-pagination-button" type="button">
+                    <span class="ctalog-pagination">...</span>
+                  </button>
+                </li>
+                <li class="catalog-pagination-item">
+                  <button class="catalog-pagination-button" type="button">
+                    <span class="ctalog-pagination">15</span>
+                  </button>
+                </li>
+              </ul>
+              <a class="pagination-link pagination-next" href="#">Вперед</a>
+            </div>
+            <!-- Пагинация карточек товара конец  -->
           </div>
-          <!-- Пагинация карточек товара конец  -->
+          <!-- Карточки товаров конец  -->
         </div>
-        <!-- Карточки товаров конец  -->
       </section>
       <!-- Каталог конец  -->
     </main>
     <!-- Футер начало -->
     <footer class="page-footer">
-      <a class="logo-device" href="#">
+      <a class="footer-logo-device" href="index.html">
         <img src="images/icon/logo-device-footer.svg" width="145" height="36" alt="Логотип">
         <span class="visually-hidden">Логотип</span>
       </a>
@@ -246,11 +262,7 @@
         </li>
       </ul>
       <a class="tel-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-      <a class="logo-academy" href="https://htmlacademy.ru/">
-        <img src="images/icon/html-academy.svg" width="115" height="33" alt="Логотип академии">
-        <span class="visually-hidden">HTMLacademy</span>
-      </a>
-      <ul class="footer-social-list list-reset">
+      <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="footer-social-link telegram-icon" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Перейти в Телеграмм</span>
@@ -266,6 +278,10 @@
             <span class="visually-hidden ">Перейти в Твиттер</span>
           </a>
         </li>
+        <a class="logo-academy" href="https://htmlacademy.ru/">
+          <img src="images/icon/html-academy.svg" width="115" height="33" alt="Логотип академии">
+          <span class="visually-hidden">HTMLacademy</span>
+        </a>
       </ul>
     </footer>
     <!-- Футер конец  -->
