@@ -30,6 +30,7 @@ html {
 
 /* Общие стили */
 body {
+  margin: 0 auto;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -40,9 +41,10 @@ body {
 }
 
 .page-header {
-  color: #000000;
   width: 1440px;
-  margin: 20px auto 0;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding-top: 5px;
 }
 
 /* Прячем булеты у списков */
@@ -92,16 +94,17 @@ body {
 
 /* Шапка */
 .main-navigation {
-  width: 1160px;
-  background-color: #FFE17F;
+  color: #000000;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0 60px;
   box-sizing: border-box;
+  background-color: #FFE17F;
 }
 
 .logo-device {
   display: flex;
-  transform: translateY(-19px);
+  transform: translateY(-20px);
 }
 
 .header-title-link {
@@ -191,24 +194,30 @@ body {
 /*sticky-footer*/
 .main-body {
   flex-grow: 1;
-  width: 1440px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  width: 1440px;
 }
 
 /* Слайдер товаров */
-.number-card {
-  width: 1111px;
-  font-size: 180px;
-  font-weight: 700;
-  font-style: normal;
+.number-wrap {
   background-color: #FFE17F;
-  color: #fff;
-  display: flex;
-  justify-content: flex-end;
-  align-items: end;
+  width: 1160px;
   position: absolute;
-  line-height: 113px;
-  padding-right: 49px;
+  padding-top: 83px;
+  text-align: end;
+}
+
+.number-card {
+  font-size: 180px;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+    padding-right: 50px;
+    transform: translateY(-35px);
+    display: block;
 }
 
 .card-slider-title {
@@ -217,7 +226,6 @@ body {
   line-height: 50px;
   font-weight: 800;
   color: #000000;
-  width: 553px;
   margin-bottom: 29px;
 }
 
@@ -276,12 +284,8 @@ body {
   padding: 0 140px;
   display: flex;
   align-items: center;
-  margin-bottom: 70px;
 }
 
-.service-text {
-  width: 453px;
-}
 .service-delivery {
   background: url(../images/content/service-delivery.png) right center no-repeat;
 }
@@ -391,7 +395,6 @@ input[type="email"] {
 .page-footer {
   background-color: #444;
   color: #FFFFFF;
-  width: 1440px;
   box-sizing: border-box;
   padding: 0 140px;
   margin: 0 auto;
@@ -620,25 +623,16 @@ input[type="email"] {
 
 
 /* Разобрать */
-/* .navigation-list-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-} */
 
 .login-list {
   display: flex;
-  margin: 11px 0 31px;
   align-items: center;
+  grid-column: 2 / 4;
   justify-content: space-between;
 }
 
 .login-navigation-link {
   width: 517px;
-}
-
-.login-item {
-  width: 228px;
 }
 
 .cart-navigation {
@@ -694,7 +688,7 @@ input[type="email"] {
   display: flex;
   gap: 20px;
   position: absolute;
-  top: 511px;
+  bottom: 37px;
 }
 
 .slider-pagination-item {
@@ -707,7 +701,6 @@ input[type="email"] {
 .products-navigation {
   display: flex;
   padding: 0 140px;
-  margin-bottom: 70px;
 }
 
 .product-list {
@@ -732,7 +725,6 @@ input[type="email"] {
 
 .delivery-order {
   display: flex;
-  margin-bottom: 70px;
 }
 
 .about-us {
@@ -742,6 +734,13 @@ input[type="email"] {
   padding: 0 140px;
 }
 
+.about-us-button {
+  padding: 10px 6.14px;
+}
+
+.contacts-button {
+  padding: 10px 5.89px
+}
 .newsletter {
   display: flex;
   flex-direction: column;
@@ -764,11 +763,10 @@ input[type="email"] {
 }
 
 .newsletter-form {
-  width: 810px
+  max-width: 810px
 }
 
 .about-us-info {
-  width: 520px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -777,7 +775,6 @@ input[type="email"] {
 }
 
 .contacts {
-  width: 532px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -785,6 +782,7 @@ input[type="email"] {
 }
 
 .slider-pagination-button {
+  padding: 0;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -793,7 +791,6 @@ input[type="email"] {
 
 .slider-product {
   padding: 0 140px;
-  margin-bottom: 70px;
   display: flex;
   align-items: end;
   justify-content: center;
@@ -817,8 +814,7 @@ input[type="email"] {
 }
 
 .card-slider-button {
-  width: 220px;
-  height: 40px;
+  padding: 10px 5px;
   margin: 50px 0;
   display: flex;
   justify-content: center;
@@ -874,4 +870,46 @@ input[type="email"] {
   display: flex;
   flex-direction: column;
   gap: 44px;
+}
+
+.footer-wrap {
+  width: 1440px;
+  padding: 0 140px;
+  margin: 0 auto;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  border-right: 7px solid #000000;
+  padding: 65px 0;
+}
+.service-buttons {
+  margin-right: 116px;
+}
+
+.service-item {
+  padding-top: 9px;
+  padding-right: 120px;
+  padding-bottom: 11px;
+}
+
+.service-button {
+  padding: 10px 3.64px;
+}
+
+.service-button-current {
+  background-color: #000000;
+  color: #FFE17F;
+}
+
+.navigation-list-wrap {
+  display: grid;
+  margin: 11px 0 31px;
+  grid-template-columns: 52% 24% 24%;
+}
+
+.header-search-form {
+  grid-column: 1 / 2;
 }

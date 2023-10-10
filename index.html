@@ -14,13 +14,11 @@
           <span class="visually-hidden">Логотип</span>
         </a>
         <div class="navigation-list-wrap">
+          <form class="header-search-form" action="https://echo.htmlacademy.ru/" method="get">
+            <input class="search-header" name="search" placeholder="Поиск по сайту" type="search">
+            <button class="search-header-button" type="submit">Найти</button>
+          </form>
           <ul class="navigation-list list-reset login-list">
-            <li class="navigation-item login-navigation-link">
-              <form action="https://echo.htmlacademy.ru/" method="get">
-                <input class="search-header" name="search" placeholder="Поиск по сайту" type="search">
-                <button class="search-header-button" type="submit">Найти</button>
-              </form>
-            </li>
             <li class="navigation-item login-item">
               <a class="navigation-link login-link" href="#">Войти</a>
             </li>
@@ -83,7 +81,9 @@
             <li class="card-slider-item">
               <div class="card-drone">
                 <h3 class="visually-hidden">Карточка товара</h3>
-                <span class="number-card">01</span>
+                <div class="number-wrap">
+                  <span class="number-card">01</span>
+                </div>
                 <img class="img-card" src="images/content/drone-card.png" height="560" width="560" alt="Дрон">
                 <div class="card-specification-wrap">
                   <h4 class="card-slider-title">Порхает как бабочка, жалит как пчела!</h4>
@@ -110,7 +110,9 @@
             <li class="card-slider-item">
               <div class="card-fitness-tracker visually-hidden">
                 <h3 class="visually-hidden">Карточка товара</h3>
-                <span class="number-card">02</span>
+                <div class="number-wrap">
+                  <span class="number-card">02</span>
+                </div>
                 <img class="img-card" src="images/content/fitness-tracker-card.png" height="560" width="560" alt="Фитнес трекер">
                 <div class="card-specification-wrap">
                   <h4 class="card-slider-title">Худеем правильно!</h4>
@@ -135,7 +137,9 @@
             <li class="card-slider-item">
               <div class="selfie-stick visually-hidden">
                 <h3 class="visually-hidden">Карточка товара</h3>
-                <span class="number-card">03</span>
+                <div class="number-wrap">
+                  <span class="number-card">03</span>
+                </div>
                 <img class="img-card" src="images/content/selfie-stick-card.png" height="560" width="560" alt="Селфи палка">
                 <div class="card-specification-wrap">
                   <h4 class="card-slider-title">
@@ -203,7 +207,7 @@
             </a>
           </li>
           <li class="product-item">
-            <a class="product-link" href="#">
+            <a class="product-link" href="catalog.html">
               <img class="product-link-img" alt="Моноподы для селфи" height="160" width="160" src="images/content/selfie-stick.svg">
               Моноподы для селфи
             </a>
@@ -240,14 +244,14 @@
         <h2 class="visually-hidden">Сервис</h2>
         <div class="service-buttons">
           <ul class="service-list list-reset">
-            <li>
-              <button class="service-item button-all" type="button">Доставка</button>
+            <li class="service-item service-button-current">
+              <button class="service-button service-button-current button-all" type="button">Доставка</button>
             </li>
-            <li>
-              <button class="service-item button-all" type="button">Гарантия</button>
+            <li class="service-item">
+              <button class="service-button button-all" type="button">Гарантия</button>
             </li>
-            <li>
-              <button class="service-item button-all" type="button">Кредит</button>
+            <li class="service-item">
+              <button class="service-button button-all" type="button">Кредит</button>
             </li>
           </ul>
         </div>
@@ -314,7 +318,7 @@
               </p>
             </li>
           </ul>
-          <a class="button-all" href="#">Подробнее о нас</a>
+          <a class="button-all about-us-button" href="#">Подробнее о нас</a>
         </div>
         <!-- контакты -->
         <div class="contacts">
@@ -335,7 +339,7 @@
             <li class="contacts-timing-info">пн-пт: с 10:00 до 22:00</li>
             <li class="contacts-timing-info">сб-вс: с 10:00 до 19:00</li>
           </ul>
-          <a class="button-all" href="#">Напишите нам</a>
+          <a class="button-all contacts-button" href="#">Напишите нам</a>
         </div>
       </section>
       <!-- Контактная информация конец -->
@@ -359,48 +363,50 @@
       <!-- Почтовая рассылка конец -->
     </main>
     <footer class="page-footer">
-      <a class="footer-logo-device" href="index.html">
-        <img src="images/icon/logo-device-footer.svg" width="145" height="36" alt="Логотип">
-        <span class="visually-hidden">Логотип</span>
-      </a>
-      <address class="contacts-address">
-        <p class="contacts-address-footer">
-          Санкт-Петербург, набережная реки Карповки, 5, литера П.
-        </p>
-      </address>
-      <ul class="footer-nav list-reset">
-        <li class="footer-nav-item">
-          <a class="footer-nav-link" href="#">Доставка</a>
-        </li>
-        <li class="footer-nav-item">
-          <a class="footer-nav-link" href="#">Гарантия</a>
-        </li>
-        <li class="footer-nav-item">
-          <a class="footer-nav-link" href="#">Контакты</a>
-        </li>
-      </ul>
-      <a class="tel-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="footer-social-link telegram-icon" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Перейти в Телеграмм</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="footer-social-link youtube-icon" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Перейти на Ютуб</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="footer-social-link twitter-icon" href="https://twitter.com/htmlacademy_ru">
-            <span class="visually-hidden ">Перейти в Твиттер</span>
-          </a>
-        </li>
-        <a class="logo-academy" href="https://htmlacademy.ru/">
-          <img src="images/icon/html-academy.svg" width="115" height="33" alt="Логотип академии">
-          <span class="visually-hidden">HTMLacademy</span>
+      <div class="footer-wrap">
+        <a class="footer-logo-device" href="index.html">
+          <img src="images/icon/logo-device-footer.svg" width="145" height="36" alt="Логотип">
+          <span class="visually-hidden">Логотип</span>
         </a>
-      </ul>
+        <address class="contacts-address">
+          <p class="contacts-address-footer">
+            Санкт-Петербург, набережная реки Карповки, 5, литера П.
+          </p>
+        </address>
+        <ul class="footer-nav list-reset">
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">Доставка</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">Гарантия</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <a class="tel-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="footer-social-link telegram-icon" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Перейти в Телеграмм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link youtube-icon" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Перейти на Ютуб</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link twitter-icon" href="https://twitter.com/htmlacademy_ru">
+              <span class="visually-hidden ">Перейти в Твиттер</span>
+            </a>
+          </li>
+          <a class="logo-academy" href="https://htmlacademy.ru/">
+            <img src="images/icon/html-academy.svg" width="115" height="33" alt="Логотип академии">
+            <span class="visually-hidden">HTMLacademy</span>
+          </a>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
