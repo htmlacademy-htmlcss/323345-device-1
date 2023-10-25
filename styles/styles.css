@@ -126,6 +126,7 @@ body {
   border: 2px solid #000;
   margin: 0 0 0 -10px;
   background-color: #FFE17F;
+  cursor: pointer;
 
 }
 
@@ -488,6 +489,10 @@ body {
 .catalog-pagination-item,
 .footer-nav-item {
   display: inline;
+}
+
+.shop-info-item {
+  z-index: 1;
 }
 
 .breadcrumbs-link {
@@ -959,7 +964,6 @@ body {
 
 .product-catalog-wrap {
   display: flex;
-  flex-direction: column;
   gap: 44px;
 }
 
