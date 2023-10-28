@@ -550,6 +550,10 @@ body {
   font-style: normal;
 }
 
+.contacts-address-tel:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .newsletter,
 .newsletter-title {
   background-color: #F0F0F0;
@@ -658,7 +662,7 @@ body {
   transition: 0.4s;
 }
 
-.footer-social-link:focus .footer-social-img {
+.footer-social-link:focus {
   outline: 2px solid #AF4FFF;
 }
 
@@ -757,19 +761,22 @@ body {
 .choose-send {
   width: 220px;
   background: linear-gradient(to bottom, rgba(255,225,127,0) 32%,rgba(255,225,127,0.94) 33%,rgba(255,225,127,1) 66%,rgba(255,225,127,0) 67%);
+  transition: 0.1s;
 }
 
 .choose-send:hover {
   background: #FFE17F;
-  transition: 0.4s
+  transition: 0.4s;
 }
 
 .choose-send:focus {
   outline: 2px solid #AF4FFF;
+  transition: 0.1s;
 }
 
 .choose-send:active {
   background: #FFCC33;
+  transition: 0.1s;
 }
 
 .popular-choose {
@@ -1218,15 +1225,17 @@ body {
   justify-content: center;
   align-items: center;
   letter-spacing: 3.6px;
+  transition: 0.4s;
 }
 
 .card-slider-button:hover {
   background: #FFE17F;
-  transition: 0.4s
+  transition: 0.4s;
 }
 
 .card-slider-button:focus {
   outline: 2px solid #AF4FFF;
+  transition: 0.1s;
 }
 
 .card-slider-button:active {
@@ -1310,18 +1319,20 @@ body {
 
 .service-button {
   width: 160px;
-  margin: 10px 3.64px;
+  padding: 10px 3.64px;
   background: linear-gradient(to bottom, rgba(255,225,127,0) 32%,rgba(255,225,127,0.94) 33%,rgba(255,225,127,1) 66%,rgba(255,225,127,0) 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  transition: 0.4s;
 }
 
 .service-button:hover {
   background: #FFE17F;
-  transition: 0.4s
+  transition: 0.4s;
 }
 
-/* .service-button:focus {
+.service-button:focus {
   outline: 2px solid #AF4FFF;
-} */
+  transition: 0.1s;
+}
 
 .service-button:active {
   background: #FFCC33;
@@ -1349,12 +1360,10 @@ body {
   transition: 0.7s;
 }
 
-.service-button-current:not(:hover) {
-  transition: 0.7s;
-}
-
-.service-button-current:focus .service-item-current{
+.service-button-current:focus  {
   outline: 2px solid #AF4FFF;
+  transition: 0.1s;
+  width: 280px;
 }
 
 .service-button-current:active {
