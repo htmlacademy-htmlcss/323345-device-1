@@ -10,7 +10,7 @@
     <header class="page-header">
       <nav class="main-navigation">
         <a class="logo-device navigation-link" href="index.html">
-          <img src="images/icon/logo-device.svg" height="36" width="145" alt="Логотип Девайс">
+          <img class="logo-device-img" src="images/icon/logo-device.svg" height="36" width="145" alt="Логотип Девайс">
           <span class="visually-hidden">Логотип</span>
         </a>
         <div class="navigation-list-wrap">
@@ -45,16 +45,41 @@
           </ul>
         </div>
         <div class="shop-info-wrap">
-          <button class="catalog-button button-all" type="button">Каталог товаров</button>
+          <button class="catalog-button button-all" type="button">
+            Каталог товаров
+            <div class="catalog-icon-container">
+              <ul class="list-reset">
+                <li class="catalog-icon-plus">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="51" viewBox="0 0 50 51" fill="none">
+                    <circle cx="25" cy="25.787" r="24" stroke="black" stroke-width="2"/>
+                    <g clip-path="url(#clip0_11423_1729)">
+                    <path d="M33 24.787H26V17.787H24V24.787H17V26.787H24V33.787H26V26.787H33V24.787Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_11423_1729">
+                    <rect width="16" height="16" fill="white" transform="translate(17 17.787)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </li>
+                <li class="catalog-icon-minus visually-hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="51" viewBox="0 0 50 51" fill="none">
+                    <path d="M49 25.787C49 39.0418 38.2548 49.787 25 49.787C11.7452 49.787 1 39.0418 1 25.787C1 12.5322 11.7452 1.78699 25 1.78699C38.2548 1.78699 49 12.5322 49 25.787Z" stroke="black" stroke-width="2"/>
+                    <path d="M33 24.787H17V26.787H33V24.787Z" fill="black"/>
+                  </svg>
+                </li>
+                </ul>
+            </div>
+          </button>
           <ul class="list-reset shop-info-nav">
             <li class="shop-info-item">
-              <a class="shop-info-link header-title-link" href="#"> Доставка</a>
+              <a class="header-title-link heder-title-link-active" href="#"> Доставка</a>
             </li>
             <li class="shop-info-item">
-              <a class="shop-info-link header-title-link" href="#"> Гарантия</a>
+              <a class="header-title-link" href="#"> Гарантия</a>
             </li>
             <li class="shop-info-item">
-              <a class="shop-info-link header-title-link" href="#"> Контакты</a>
+              <a class="header-title-link" href="#"> Контакты</a>
             </li>
           </ul>
         </div>
@@ -167,10 +192,10 @@
                 <option value="new">Новые</option>
               </select>
               <div class="sort-button-wrap">
-                <button class="sort-prev" type="button">
+                <button class="sort-button sort-prev" type="button">
                   <span class="visually-hidden">Предыдущие</span>
                 </button>
-                <button class="sort-next" type="button">
+                <button class="sort-button sort-next" type="button">
                   <span class="visually-hidden">Следующие</span>
                 </button>
               </div>
@@ -224,7 +249,7 @@
                 <!-- Пагинация карточек товаров  -->
                 <button class="button-all upload-button" type="button">Загрузить ещё</button>
                 <div class="pagination">
-                  <a class="pagination-link pagination-prev" href="#">Назад</a>
+                  <a class="pagination-link pagination-prev pagination-current-button" href="#">Назад</a>
                   <ul class="catalog-pagination list-reset">
                     <li class="catalog-pagination-item">
                       <button class="catalog-pagination-button" type="button">
@@ -252,7 +277,7 @@
                       </button>
                     </li>
                   </ul>
-                  <a class="pagination-link pagination-next" href="#">Вперед</a>
+                  <a class="pagination-link pagination-next" href="#">Вперёд</a>
                 </div>
                 <!-- Пагинация карточек товара конец  -->
               </div>
@@ -267,7 +292,7 @@
     <footer class="page-footer">
       <div class="footer-container">
         <a class="footer-logo-device" href="index.html">
-          <img src="images/icon/logo-device-footer.svg" width="145" height="36" alt="Логотип">
+          <img class="logo-device-img" src="images/icon/logo-device-footer.svg" width="145" height="36" alt="Логотип">
           <span class="visually-hidden">Логотип</span>
         </a>
         <div class="footer-wrap">
