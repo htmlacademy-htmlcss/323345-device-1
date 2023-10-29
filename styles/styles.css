@@ -907,7 +907,7 @@ body {
   text-decoration: none;
 }
 
-.catalog-card-link:focus {
+.catalog-item:focus-within {
   outline: 2px solid #AF4FFF;
   transition: 0.1s;
 }
@@ -1002,7 +1002,7 @@ body {
   justify-content: center;
 }
 
-.catalog-pagination-button:hover .catalog-pagination{
+.catalog-pagination-button:hover {
   opacity: 1;
   transition: 0.4s;
 }
