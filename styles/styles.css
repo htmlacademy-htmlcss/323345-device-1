@@ -49,6 +49,7 @@ body {
   background-color: #FFE17F;
   margin-top: 35px;
   padding-top: 5px;
+  position: relative;
 }
 
 /* Прячем булеты у списков */
@@ -273,11 +274,20 @@ body {
   flex-direction: column;
   font-size: 16px;
   line-height: 18px;
+  gap: 30px;
+  margin-left: 60px;
 }
 
 .product-navigation-wrap {
   display: flex;
-  gap: 44px;
+  gap: 4px;
+  position: absolute;
+  z-index: 1;
+  width: 1160px;
+  height: 148px;
+  background-color: #FFE17F;
+  top: 180px;
+  left: 0;
 }
 
 /*sticky-footer*/
@@ -1415,7 +1425,7 @@ body {
 .service-button-current:hover {
   background: #000000;
   padding-left: 28px;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 
 .service-button-current:focus  {
