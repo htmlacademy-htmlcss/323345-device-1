@@ -26,6 +26,7 @@
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 /* Общие стили */
@@ -118,6 +119,7 @@ body {
   letter-spacing: 3.2px;
   line-height: 21px;
   text-transform: uppercase;
+  transition: 0.2s;
 }
 
 .heder-title-link-active {
@@ -126,14 +128,17 @@ body {
 
 .header-title-link:hover {
   opacity: 0.6;
+  transition: 0.2s;
 }
 
 .header-title-link:active {
   opacity: 0.3;
+  transition: 0.2s;
 }
 
 .header-title-link:focus {
   outline: 2px solid #AF4FFF;
+  transition: 0.1s;
 }
 
 .search-header-button {
