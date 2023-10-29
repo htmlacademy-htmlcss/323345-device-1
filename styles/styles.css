@@ -825,14 +825,24 @@ body {
 
 .sort-button {
   transition: 0.1s;
+  width: 29px;
+  height: 29px;
+  border: none;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
-.sort-button:hover{
+.sort-button-img {
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.sort-button:hover .sort-button-img {
   opacity: 0.5;
   transition: 0.4s;
 }
 
-.sort-button:active{
+.sort-button:active .sort-button-img {
   opacity: 1;
   transition: 0.2s;
 }
@@ -841,20 +851,9 @@ body {
   outline: 2px solid rgba(175, 79, 255, 1);
 }
 
-.sort-prev {
-  width: 30px;
-  height: 30px;
-  border: none;
-  background: url(../images/icon/sort-up.svg) center center no-repeat;
-  cursor: pointer;
-  opacity: 0.2;
-}
+
 
 .sort-next {
-  width: 30px;
-  height: 30px;
-  border: none;
-  background: url(../images/icon/sort-up.svg) center center no-repeat;
   cursor: pointer;
   transform: rotate(180deg);
   opacity: 0.2;
