@@ -820,8 +820,7 @@ body {
 }
 
 .sort-button:focus{
-  outline: 2px solid #AF4FFF;
-  transition: 0.1s;
+  outline: 2px solid rgba(175, 79, 255, 1);
 }
 
 .sort-prev {
@@ -847,9 +846,52 @@ body {
   margin-bottom: 23px;
 }
 
-.catalog-card:hover {
-  opacity: 0.6;
+.card-more-info {
+  width: 360px;
+  height: 380px;
+  position: absolute;
+  background-color: rgba(240, 240, 240, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.catalog-card {
+  transition: 0.3s;
+  position: relative;
+}
+
+.new-product::after {
   content: "";
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  width: 60px;
+  height: 60px;
+  background: url(../images/icon/new-product.svg) no-repeat;
+}
+
+.catalog-card-link:hover .card-more-info {
+  display: flex;
+}
+
+.catalog-card-link:hover .catalog-product-wrap {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.catalog-card-link:hover .new-product::after {
+  opacity: 0.6;
+  transition: 0.1s;
+}
+
+.catalog-card-link {
+  text-decoration: none;
+}
+
+.catalog-card-link:focus {
+  outline: 2px solid #AF4FFF;
+  transition: 0.1s;
 }
 
 .catalog-product-name {
@@ -872,6 +914,19 @@ body {
   padding: 14px 39px;
   border: 3px solid #E5E5E5;
   background: none;
+}
+
+.upload-button:hover {
+  border: 3px solid #000;
+}
+
+.upload-button:active {
+  border: 3px solid #000;
+  opacity: 0.3;
+}
+
+.upload-button:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .pagination {
@@ -1368,7 +1423,6 @@ body {
 
 .service-button-current:active {
   padding-left: 28px;
-  /* width: 245px; */
 }
 
 .navigation-list-wrap {
@@ -1456,22 +1510,25 @@ body {
   justify-content: center;
   align-items: flex-end;
   flex-wrap: wrap;
+}
+
+.logo-academy-link {
   transition: 0.4s;
 }
 
-.logo-academy:hover .logo-academy-img {
+.logo-academy-link:hover .logo-academy-img {
   fill: #F0F0F0;
   fill-opacity: 1;
   transition: 0.4s;
 }
 
-.logo-academy:active .logo-academy-img {
+.logo-academy-link:active .logo-academy-img {
   fill: #f0f0f0;
   fill-opacity: 0.3;
   transition: 0.4s;
 }
 
-.logo-academy:focus .logo-academy-img {
+.logo-academy-link:focus {
   outline: 2px solid #AF4FFF;
 }
 
