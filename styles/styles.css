@@ -610,6 +610,7 @@ body {
 
 .footer-nav-link:focus {
   outline: 2px solid #AF4FFF;
+  transition: 0.1s;
 }
 
 .tel-link {
@@ -634,6 +635,7 @@ body {
 
 .tel-link:focus {
   outline: 2px solid #AF4FFF;
+  transition: 0.1s;
 }
 
 .footer-social-list {
@@ -664,6 +666,7 @@ body {
 
 .footer-social-link:focus {
   outline: 2px solid #AF4FFF;
+  transition: 0.1s;
 }
 
 .logout-link {
@@ -1530,6 +1533,7 @@ body {
 
 .logo-academy-link:focus {
   outline: 2px solid #AF4FFF;
+  transition: 0.1s;
 }
 
 .contact-tel-wrap {
