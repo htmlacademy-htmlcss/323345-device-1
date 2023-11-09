@@ -1317,7 +1317,7 @@ body {
   background: #FFCC33;
 }
 
-.slider-pagination-background {
+.slider-pagination-active {
   background-color: #000000;
 }
 
@@ -1666,3 +1666,211 @@ body {
 .product-link:focus {
   outline: 2px solid #AF4FFF;
 }
+
+/* Модальное окно */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 240, 240, 0.90);
+  z-index: 1;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 72px 80px;
+  color: rgba(0, 0, 0, 1);
+  background-color: #FFFFFF;
+  border: 10px solid #000;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.10);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+}
+
+.modal-title-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title {
+  font-family: "Raleway";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 50px;
+  margin: 0;
+}
+
+.modal-close-button {
+  width: 26px;
+  height: 26px;
+  background-image: url(../images//icon/modal-button-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+}
+
+.modal-item-wrap {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.modal-form-title {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+}
+
+.modal-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modal-button {
+  width: 60px;
+  height: 60px;
+  background-color: #F0F0F0;
+  border: none;
+}
+
+.modal-button-del {
+  background: url(../images/icon/minus.svg) no-repeat center center;
+  cursor: pointer;
+  background-color: #F0F0F0;
+}
+
+.modal-button-add {
+  background: url(../images/icon/plus.svg) no-repeat center center;
+  cursor: pointer;
+  background-color: #F0F0F0;
+}
+
+.modal-product-amount-field {
+  width: 60px;
+  height: 60px;
+  background-color: #F0F0F0;
+  border: none;
+  box-sizing: border-box;
+}
+
+.modal-product-amount-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.product-amount-wrap {
+  display: flex;
+}
+
+.modal-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modal-button-send {
+  margin-right: auto;
+}
+
+.modal-form-field {
+  padding: 20px;
+  width: 360px;
+  height: 60px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.modal-auth-form-field {
+  background: url(../images/icon/user-grey.svg) no-repeat right 20px center;
+  background-color: #F0F0F0;
+}
+
+.modal-email-form-field {
+  background: url(../images/icon/mail.svg) no-repeat right 20px center;
+  background-color: #F0F0F0;
+}
+
+.modal-product-form-field {
+  padding: 20px;
+  width: 540px;
+  height: 60px;
+  box-sizing: border-box;
+  background-color: #F0F0F0;
+  border: none;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip {
+  position: absolute;
+  margin-left: 8px;
+  margin-top: -3px;
+  width: 26px;
+  height: 26px;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #242424;
+  display: block;
+}
+
+.tooltip-text {
+  position: absolute;
+  margin-left: -136px;
+  margin-top: 6px;
+  padding: 19px 17px;
+  width: 200px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: none;
+  box-sizing: border-box;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 6px;
+  top: -6px;
+  right: 44px;
+  background: url(../images/icon/triangle.svg) no-repeat center center;
+}
+
+/* .modal-container-close {
+  display: none;
+} */

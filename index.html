@@ -109,7 +109,7 @@
         <div class="slider-wrap">
           <h2 class="visually-hidden">Слайдер товаров</h2>
           <ul class="card-slider list-reset">
-            <li class="card-slider-item">
+            <li class="card-slider-item card-slider-active">
               <div class="number-wrap">
                 <span class="number-card">01</span>
               </div>
@@ -209,7 +209,7 @@
           </div>
           <ol class="slider-pagination-list list-reset">
             <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-background" type="button">
+              <button class="slider-pagination-button slider-pagination-active" type="button">
                 <span class="visually-hidden">1 карточка</span>
               </button>
             </li>
@@ -544,5 +544,62 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal">
+        <div class="modal-content">
+          <div class="modal-title-wrap">
+            <h2 class="modal-title">Доставка под заказ</h2>
+            <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </div>
+          <div class="modal-item-wrap">
+            <form class="modal-auth-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="modal-form-title" for="modal-name-auth">Ваше имя:</label>
+                <input class="modal-auth-form-field modal-form-field " type="text" id="modal-name-auth" name="modal-name-auth" placeholder="Введите имя">
+            </form>
+            <form class="modal-auth-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="modal-form-title" for="modal-email-auth">Ваше e-mail:</label>
+              <input class="modal-email-form-field modal-form-field" type="email" id="modal-email-auth" name="modal-email-auth" placeholder="почта">
+            </form>
+          </div>
+          <div class="modal-item-wrap">
+            <form class="modal-product-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="modal-form-title" for="modal-product-name">Что нужно привезти:</label>
+                <input class="modal-product-form-field" type="text" id="modal-product-name" name="modal-product-name" placeholder="В свободной форме">
+            </form>
+            <div class="modal-product-amount">
+
+              <form class="modal-product-amount-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="modal-form-title" for="modal-product-amount-wrap">
+                  Количество:
+                  <span  class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg  class="tooltip-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
+                        <circle cx="13" cy="13" r="13" fill="#FFE17F"/>
+                        <path fill="#000" d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z"/>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+                </span>
+                  </span>
+                </label>
+                <div class="product-amount-wrap" id="modal-product-amount-wrap">
+                  <button class="modal-button modal-button-del" type="button">
+                    <span class="visually-hidden">Убавить</span>
+                  </button>
+                  <input class="modal-product-amount-field" type="number" id="modal-product-amount" name="modal-product-amount" placeholder="1">
+                  <button class="modal-button modal-button-add" type="button">
+                    <span class="visually-hidden">Добавить</span>
+                  </button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+          <button class="button-all choose-send modal-button-send" type="submit">Отправить</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
