@@ -88,6 +88,11 @@ body {
   cursor: pointer;
 }
 
+.button-all:disabled {
+  opacity: 0.2;
+  cursor: default;
+}
+
 .navigation-link {
   text-align: center;
   color: #000000;
@@ -171,6 +176,7 @@ body {
 
 .search-header-button:focus {
   outline: 2px solid #AF4FFF;
+  transition: 0.1s;
 }
 
 .search-header {
@@ -186,6 +192,7 @@ body {
 
 .search-header:focus {
   outline: 2px solid #AF4FFF;
+  transition: 0.1s;
 }
 
 .navigation-item {
@@ -208,6 +215,7 @@ body {
 
 .navigation-link:focus {
   outline: 2px solid #AF4FFF;
+  transition: 0.1s;
 }
 
 .cart-item:hover {
@@ -220,6 +228,7 @@ body {
 
 .cart-link:focus {
   outline: 2px solid #AF4FFF;
+  transition: 0.1s;
 }
 
 .comparison-link {
@@ -1171,6 +1180,7 @@ body {
 
 .about-us-button:focus {
   outline: 2px solid #AF4FFF;
+  transition: 0.1s;
 }
 
 .about-us-button:active {
@@ -1190,6 +1200,7 @@ body {
 
 .contacts-button:focus {
   outline: 2px solid #AF4FFF;
+  transition: 0.1s;
 }
 
 .contacts-button:active {
@@ -1724,6 +1735,18 @@ body {
   border: none;
 }
 
+.modal-close-button:hover {
+  opacity: 0.6;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+.modal-close-button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .modal-item-wrap {
   display: flex;
   gap: 40px;
@@ -1767,6 +1790,7 @@ body {
   background-color: #F0F0F0;
   border: none;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .modal-product-amount-form {
@@ -1803,9 +1827,15 @@ body {
   background-color: #F0F0F0;
 }
 
+.input-field:focus {
+  outline: 2px solid #AF4FFF;
+  transition: 0.1s;
+}
+
 .modal-email-form-field {
   background: url(../images/icon/mail.svg) no-repeat right 20px center;
   background-color: #F0F0F0;
+  margin-bottom: 20px;
 }
 
 .modal-product-form-field {
@@ -1816,6 +1846,45 @@ body {
   background-color: #F0F0F0;
   border: none;
 }
+
+.modal-product-amount-field::-webkit-outer-spin-button,
+.modal-product-amount-field::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.modal-email-form-field:invalid {
+  outline: 2px solid #FF3D3D;
+}
+
+.modal-email-form {
+  position: relative;
+}
+
+.modal-email-invalid-text {
+  color: #FF3D3D;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+.modal-email-form-field:invalid + .modal-email-invalid-text {
+  display: block;
+}
+
+/* .modal-container-close {
+  display: none;
+} */
+
+/* Модалка конец  */
+
+/* Тултип начало */
 
 .tooltip-toggle {
   border: none;
@@ -1871,6 +1940,18 @@ body {
   background: url(../images/icon/triangle.svg) no-repeat center center;
 }
 
-/* .modal-container-close {
-  display: none;
-} */
+
+
+
+/* Тултип конец */
+
+.input-field:disabled,
+.form-button:disabled {
+  opacity: 0.2;
+  cursor: default;
+}
+
+.input-field:placeholder-shown {
+  opacity: 1;
+  color: #000;
+}

@@ -15,8 +15,8 @@
         </a>
         <div class="navigation-list-wrap">
           <form class="header-search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="search-header" name="search" placeholder="Поиск по сайту" type="search">
-            <button class="search-header-button" type="submit">Найти</button>
+            <input class="input-field search-header" name="search" placeholder="Поиск по сайту" type="search">
+            <button class="form-button search-header-button" type="submit">Найти</button>
           </form>
           <ul class="navigation-list list-reset login-list">
             <li class="navigation-item login-item">
@@ -454,8 +454,8 @@
           </div>
           <div class="newsletter-wrap">
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="newsletter-email" id="email" name="email" type="email" placeholder="Ваш e-mail">
-              <input class="button-all newsletter-button" type="submit" value="ПОДПИСАТЬСЯ">
+              <input class="input-field newsletter-email" id="email" name="email" type="email" placeholder="Ваш e-mail">
+              <input class="input-field button-all newsletter-button" type="submit" value="ПОДПИСАТЬСЯ">
             </form>
             <span class="newsletter-note">Это бесплатно</span>
           </div>
@@ -556,17 +556,18 @@
           <div class="modal-item-wrap">
             <form class="modal-auth-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="modal-form-title" for="modal-name-auth">Ваше имя:</label>
-                <input class="modal-auth-form-field modal-form-field " type="text" id="modal-name-auth" name="modal-name-auth" placeholder="Введите имя">
+                <input class="input-field modal-auth-form-field modal-form-field " type="text" id="modal-name-auth" name="modal-name-auth" placeholder="Введите имя">
             </form>
-            <form class="modal-auth-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="modal-form-title" for="modal-email-auth">Ваше e-mail:</label>
-              <input class="modal-email-form-field modal-form-field" type="email" id="modal-email-auth" name="modal-email-auth" placeholder="почта">
+            <form class="modal-auth-form modal-email-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="modal-form-title modal-email-form-title" for="modal-email-auth">Ваше e-mail:</label>
+              <input class="input-field modal-email-form-field modal-form-field" type="email" id="modal-email-auth" name="modal-email-auth" placeholder="почта">
+              <span class="modal-email-invalid-text">Забавный у вас адрес</span>
             </form>
           </div>
           <div class="modal-item-wrap">
             <form class="modal-product-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="modal-form-title" for="modal-product-name">Что нужно привезти:</label>
-                <input class="modal-product-form-field" type="text" id="modal-product-name" name="modal-product-name" placeholder="В свободной форме">
+                <input class="input-field modal-product-form-field" type="text" id="modal-product-name" name="modal-product-name" placeholder="В свободной форме">
             </form>
             <div class="modal-product-amount">
 
@@ -574,7 +575,7 @@
                 <label class="modal-form-title" for="modal-product-amount-wrap">
                   Количество:
                   <span  class="tooltip">
-                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <button class="form-button tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                       <svg  class="tooltip-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
                         <circle cx="13" cy="13" r="13" fill="#FFE17F"/>
                         <path fill="#000" d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z"/>
@@ -585,11 +586,11 @@
                   </span>
                 </label>
                 <div class="product-amount-wrap" id="modal-product-amount-wrap">
-                  <button class="modal-button modal-button-del" type="button">
+                  <button class="form-button modal-button modal-button-del" type="button">
                     <span class="visually-hidden">Убавить</span>
                   </button>
-                  <input class="modal-product-amount-field" type="number" id="modal-product-amount" name="modal-product-amount" placeholder="1">
-                  <button class="modal-button modal-button-add" type="button">
+                  <input class="input-field modal-product-amount-field" type="number" id="modal-product-amount" name="modal-product-amount" placeholder="1">
+                  <button class="form-button modal-button modal-button-add" type="button">
                     <span class="visually-hidden">Добавить</span>
                   </button>
                 </div>
