@@ -393,7 +393,7 @@ body {
 /* Выпадающее меню */
 
 .catalog-button {
-  text-align: start;
+  position: relative;
   padding: 0;
   background-color: #FFE17F;
   z-index: 1;
@@ -413,6 +413,23 @@ body {
 .catalog-icon-container {
   padding-left: 17px;
   opacity: 0.3;
+  transition: 0.4s;
+}
+
+.catalog-icon-minus {
+  display: none;
+}
+
+.catalog-button:focus .catalog-icon-plus {
+  display: none;
+}
+
+.catalog-button:focus .catalog-icon-minus {
+  display: inherit;
+}
+
+.catalog-button:focus .catalog-icon-container {
+  opacity: 1;
   transition: 0.4s;
 }
 
