@@ -437,7 +437,7 @@ body {
   left: 0;
 }
 
-.catalog-button:active  .product-navigation-wrap  {
+.catalog-button:focus  + .product-navigation-wrap  {
   display: flex;
 }
 
