@@ -329,7 +329,7 @@ body {
   color: #FFFFFF;
   background-color: #000;
   min-height: 217px;
-  /* display: none; */
+  display: none;
 }
 
 .popover-content {
