@@ -218,11 +218,11 @@ body {
   transition: 0.1s;
 }
 
-.cart-item:hover {
+.cart-link:hover {
   opacity: 0.6;
 }
 
-.cart-item:active {
+.cart-link:active {
   opacity: 0.3;
 }
 
@@ -256,11 +256,148 @@ body {
   font-size: 14px;
   position: absolute;
   left: 18px;
+  z-index: 1;
+}
+
+.cart-button {
+  width: 280px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.cart-product:hover {
+  opacity: 0.6;
+}
+
+.cart-product:active {
+  opacity: 0.3;
+}
+
+.cart-product:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.cart-product-del:hover {
+  opacity: 0.6;
+}
+
+.cart-product-del:active {
+  opacity: 0.3;
+}
+
+.cart-product-del:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.cart-button:hover {
+  background-color: #FFE17F;
+}
+
+.cart-button:active {
+  background-color: #FFE17F;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.cart-button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.cart-button:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+/* Popover */
+
+.popover {
+  position: absolute;
+  top: 30px;
+  right: -80px;
+  z-index: 2;
+  box-sizing: border-box;
+  width: 320px;
+  color: #FFFFFF;
+  background-color: #000;
+  min-height: 217px;
+  display: none;
+}
+
+.cart-link:focus + .popover {
+  display: block;
+}
+
+.popover-content {
+  height: 100%;
+}
+
+.cart-product-del {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.product-del-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-product {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-product-item {
+  margin: 0;
+  padding-left: 61px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.selfie-junior {
+  background: url(../images/product/selfie-stick-junior-small.jpg) no-repeat left center;
+}
+
+.selfie-pro {
+  background: url(../images/product/selfie-stick-pro-small.jpg) no-repeat left center;
+}
+
+.cart-sum-wrap {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popover::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 6px;
+  top: -6px;
+  right: 156px;
+  background: url(../images/icon/triangle.svg) no-repeat center center;
 }
 
 /* Выпадающее меню */
+
 .catalog-button {
-  text-align: start;
+  position: relative;
   padding: 0;
   background-color: #FFE17F;
   z-index: 1;
@@ -283,6 +420,23 @@ body {
   transition: 0.4s;
 }
 
+.catalog-icon-minus {
+  display: none;
+}
+
+.catalog-button:focus .catalog-icon-plus {
+  display: none;
+}
+
+.catalog-button:focus .catalog-icon-minus {
+  display: inherit;
+}
+
+.catalog-button:focus .catalog-icon-container {
+  opacity: 1;
+  transition: 0.4s;
+}
+
 .product-catalog {
   display: flex;
   flex-direction: column;
@@ -293,7 +447,7 @@ body {
 }
 
 .product-navigation-wrap {
-  display: flex;
+  display: none;
   gap: 4px;
   position: absolute;
   z-index: 1;
@@ -302,6 +456,10 @@ body {
   background-color: #FFE17F;
   top: 180px;
   left: 0;
+}
+
+.catalog-button:focus  + .product-navigation-wrap  {
+  display: flex;
 }
 
 /*sticky-footer*/
@@ -313,7 +471,7 @@ body {
 /* Слайдер товаров */
 .number-wrap {
   background-color: #FFE17F;
-  width: 1160px;
+  width: 100%;
   position: absolute;
   padding-top: 119px;
   text-align: end;
@@ -380,6 +538,7 @@ body {
 }
 
 .product-link {
+  width: 160px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -785,8 +944,8 @@ body {
   position: absolute;
   top: 2px;
   left: 0;
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
   border: 2px solid #CCCCCC;
   border-radius: 3px;
 }
@@ -827,8 +986,8 @@ body {
 
 .control-input[type="radio"]:checked + .color-text-mark::before {
   position: absolute;
-  top: 6px;
-  left: 6px;
+  top: 5px;
+  left: 5px;
   width: 8px;
   height: 8px;
   background-color: #242424;
@@ -1237,6 +1396,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .login-navigation-link {
@@ -1256,6 +1416,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding-bottom: 16px;
 }
 
@@ -1319,6 +1480,7 @@ body {
 .product-list {
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .service-cards {
@@ -1428,7 +1590,8 @@ body {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border-color: #000000;
+  border: 2px solid #000;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -1638,10 +1801,13 @@ body {
 
 .navigation-list-wrap {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 28px;
 }
 
 .header-search-form {
+  display: flex;
+  flex-wrap: nowrap;
   margin-right: 27px;
 }
 
