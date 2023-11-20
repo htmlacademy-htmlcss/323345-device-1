@@ -553,7 +553,7 @@ body {
 .service {
   background: linear-gradient(to bottom, transparent 26%, #F0F0F0 24%);
   margin-bottom: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 72px;
 }
 
 .service-delivery {
@@ -928,8 +928,12 @@ body {
   color: #000000;
   margin-bottom: 17px;
   border-top: 3px solid #000;
-  padding-top: 13px;
+  padding-top: 12px;
   width: 196px;
+}
+
+.filter-items-list {
+  margin-top: 3px;
 }
 
 /* Control */
@@ -944,8 +948,8 @@ body {
   position: absolute;
   top: 2px;
   left: 0;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   border: 2px solid #CCCCCC;
   border-radius: 3px;
 }
@@ -988,8 +992,8 @@ body {
   position: absolute;
   top: 5px;
   left: 5px;
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   background-color: #242424;
   border-radius: 50%;
   content: "";
@@ -1198,7 +1202,7 @@ body {
 }
 
 .filter-button {
-  margin-top: 18px;
+  margin-top: 15px;
 }
 
 .sort-next {
@@ -1474,7 +1478,7 @@ body {
   padding: 0 140px;
   max-width: 1160px;
   margin: 0 auto;
-  margin-bottom: 81px;
+  margin-bottom: 86px;
 }
 
 .product-list {
@@ -1563,7 +1567,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 93px;
+  padding-bottom: 90px;
 }
 
 .newsletter-form {
@@ -1617,7 +1621,7 @@ body {
 .about-us-title {
   margin: 0;
   padding: 0;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   letter-spacing: -0.5px;
   position: relative;
 }
@@ -1625,7 +1629,7 @@ body {
 .about-us-title::before {
   content: "";
   position: absolute;
-  bottom: 93px;
+  bottom: 91px;
   width: 84px;
   height: 7px;
   background-color: #000;
@@ -1891,6 +1895,7 @@ body {
 
 .logo-academy-link {
   transition: 0.4s;
+  margin-top: 6px;
 }
 
 .logo-academy-link:hover .logo-academy-img {
