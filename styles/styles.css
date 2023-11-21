@@ -1215,19 +1215,25 @@ body {
   margin-bottom: 23px;
 }
 
+.catalog-card {
+  transition: 0.3s;
+}
+
+.catalog-item {
+  position: relative;
+}
+
 .card-more-info {
   width: 360px;
   height: 380px;
   position: absolute;
+  top: 0;
+  left: 0;
   background-color: rgba(240, 240, 240, 0.8);
   display: none;
   align-items: center;
   justify-content: center;
-}
-
-.catalog-card {
-  transition: 0.3s;
-  position: relative;
+  z-index: 1;
 }
 
 .new-product::after {
@@ -1240,7 +1246,7 @@ body {
   background: url(../images/icon/new-product.svg) no-repeat;
 }
 
-.catalog-card-link:hover .card-more-info {
+.catalog-item:hover  .card-more-info {
   display: flex;
 }
 
@@ -2233,6 +2239,7 @@ body {
 .modal-container-close {
   display: none;
 }
+
 
 /* Модалка конец  */
 
