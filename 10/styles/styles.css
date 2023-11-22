@@ -2625,8 +2625,8 @@ body {
 }
 
 .modal-auth-form-field {
-  background-color: #f0f0f0;
   background: url("../images/icon/user-grey.svg") no-repeat right 20px center;
+  background-color: #f0f0f0;
 }
 
 .input-field:focus {
@@ -2637,9 +2637,9 @@ body {
 }
 
 .modal-email-form-field {
-  background-color: #f0f0f0;
   margin-bottom: 20px;
   background: url("../images/icon/mail.svg") no-repeat right 20px center;
+  background-color: #f0f0f0;
 }
 
 .modal-product-form-field {
@@ -2683,9 +2683,9 @@ body {
   display: block;
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 
 /* Модалка конец  */
