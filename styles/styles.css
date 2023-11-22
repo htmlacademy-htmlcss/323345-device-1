@@ -38,6 +38,7 @@ html {
 
 /* Общие стили */
 body {
+  min-width: 1160px;
   margin: 0 auto;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
@@ -698,8 +699,11 @@ body {
 }
 
 .img-card {
-  margin-right: 40px;
   position: inherit;
+  margin-right: 40px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .card-slider-button {
@@ -810,6 +814,7 @@ body {
 }
 
 .service-delivery {
+  margin-right: 64px;
   background: url("../images/content/service-delivery.png") right center no-repeat;
 }
 
@@ -844,9 +849,6 @@ body {
   gap: 34px;
   padding: 64px 0;
   border-right: 7px solid #000000;
-}
-.service-buttons {
-  margin-right: 116px;
 }
 
 .service-button {
@@ -921,6 +923,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 140px;
@@ -1681,7 +1686,7 @@ body {
   background-color: #ffffff;
 }
 
-.breadcrumbs-arrow {
+.breadcrumbs-item {
   background: url("../images/icon/breadcrumbs.svg") right center no-repeat;
 }
 
@@ -2081,6 +2086,9 @@ body {
 /* Каталог  */
 .catalog-img {
   margin-bottom: 23px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .catalog-card {
@@ -2493,10 +2501,10 @@ body {
 .modal-close-button {
   width: 26px;
   height: 26px;
-  background-image: url("../images//icon/modal-button-close.svg");
-  background-repeat: no-repeat;
   background-position: center;
   background-color: #ffffff;
+  background-image: url("../images//icon/modal-button-close.svg");
+  background-repeat: no-repeat;
   cursor: pointer;
   border: none;
 }
@@ -2675,9 +2683,9 @@ body {
   display: block;
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 
 /* Модалка конец  */
