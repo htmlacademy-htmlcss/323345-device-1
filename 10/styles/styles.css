@@ -1758,7 +1758,7 @@ body {
 
 .color-text-mark {
   position: absolute;
-  top: 2px;
+  top: 0;
   left: 0;
   width: 16px;
   height: 16px;
@@ -1815,10 +1815,10 @@ body {
 .control-input[type="radio"]:checked + .color-text-mark::before {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 7px;
-  height: 7px;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
   background-color: #242424;
   border-radius: 50%;
 }
@@ -2541,6 +2541,7 @@ body {
 }
 
 .modal-auth-form {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2625,6 +2626,7 @@ body {
 }
 
 .modal-auth-form-field {
+  margin-bottom: 20px;
   background: url("../images/icon/user-grey.svg") no-repeat right 20px center;
   background-color: #f0f0f0;
 }
@@ -2677,6 +2679,23 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+
+.modal-name-invalid-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  color: #000000;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.modal-auth-form-field:valid + .modal-name-invalid-text {
+  display: none;
 }
 
 .modal-email-form-field:invalid + .modal-email-invalid-text {
@@ -2822,6 +2841,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px;
+  border-bottom: 1px solid #1A1A1A;
 }
 
 .cart-product-item {
@@ -2850,6 +2870,8 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 20px;
+  height: 44px;
+  background-color: #1A1A1A;
 }
 
 .popover::before {
