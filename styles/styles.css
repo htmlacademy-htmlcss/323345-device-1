@@ -1563,8 +1563,13 @@ body {
   border-radius: 3px;
 }
 
-.color-item:hover .color-text-mark {
+.color-item:hover {
   opacity: 0.6;
+}
+
+.control-input:focus + .color-text-mark,
+.control-input:focus + .color-text-mark + .control-label {
+   outline: 2px solid #af4fff;
 }
 
 .control-input:disabled + .color-text-mark {
