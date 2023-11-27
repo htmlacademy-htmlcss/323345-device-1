@@ -17,7 +17,7 @@
         </a>
         <div class="navigation-list-wrap">
           <form class="header-search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="input-field search-header" name="search" placeholder="Поиск по сайту" type="search">
+            <input class="input-field search-header" name="search" placeholder="Поиск по сайту" type="search" required>
             <button class="form-button search-header-button" type="submit">Найти</button>
           </form>
           <ul class="navigation-list list-reset login-list">
@@ -376,38 +376,9 @@
       </section>
       <div class="delivery-order">
         <button class="delivery-button button-all" type="button">
-          <span>
-            <span class="delivery-car-img">
-                <svg xmlns="http://www.w3.org/2000/svg" width="47" height="31" viewBox="0 0 47 31" fill="none">
-                  <g clip-path="url(#clip0_11468_2996)">
-                    <path d="M46.7 15.4L40.2 7.2C39.9 6.8 39.5 6.6 39 6.6H30.7V1.5C30.7 0.7 30 0 29.2 0H1.5C0.7 0 0 0.7 0 1.5C0 2.3 0.7 3 1.5 3H27.7V24.7H15.8C15.2 22.8 13.4 21.4 11.3 21.4C8.7 21.4 6.5 23.6 6.5 26.2C6.5 28.8 8.7 31 11.3 31C13.4 31 15.2 29.6 15.8 27.7H29.2C30 27.7 30.7 27 30.7 26.2V9.6H38.3L44 16.9V24.8H41.8C41.2 22.9 39.4 21.5 37.3 21.5C34.7 21.5 32.5 23.7 32.5 26.3C32.5 28.9 34.6 31.1 37.3 31.1C39.4 31.1 41.2 29.7 41.8 27.8H45.5C46.3 27.8 47 27.1 47 26.3V16.4C47 16 46.9 15.7 46.7 15.4ZM11.3 28C10.3 28 9.5 27.2 9.5 26.2C9.5 25.2 10.3 24.4 11.3 24.4C12.3 24.4 13.1 25.2 13.1 26.2C13.1 27.2 12.2 28 11.3 28ZM37.4 28C36.4 28 35.6 27.2 35.6 26.2C35.6 25.2 36.4 24.4 37.4 24.4C38.4 24.4 39.2 25.2 39.2 26.2C39.2 27.2 38.3 28 37.4 28Z" fill="black"/>
-                    <path d="M19.4 9.6C20.2 9.6 20.9 8.9 20.9 8.1C20.9 7.3 20.2 6.6 19.4 6.6H4.8C4 6.6 3.3 7.3 3.3 8.1C3.3 8.9 4 9.6 4.8 9.6H19.4Z" fill="black"/>
-                    <path d="M17.7 14.7C17.7 13.9 17 13.2 16.2 13.2H1.5C0.7 13.2 0 13.9 0 14.7C0 15.5 0.7 16.2 1.5 16.2H16.2C17 16.2 17.7 15.5 17.7 14.7Z" fill="black"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_11468_2996">
-                      <rect width="47" height="31" fill="white"/>
-                    </clipPath>
-                  </defs>
-                </svg>
-              </span>
-          </span>
+          <span class="delivery-car-img"></span>
             <span>Доставим редкий товар под заказ</span>
-            <span>
-              <span class="info-img-circle">
-                <svg class="info-delivery" xmlns="http://www.w3.org/2000/svg" width="2" height="12" viewBox="0 0 2 12" fill="none">
-                  <g clip-path="url(#clip0_11468_3002)">
-                    <path d="M2 0H0V2H2V0Z" fill="black"/>
-                    <path d="M2 4H0V12H2V4Z" fill="black"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_11468_3002">
-                      <rect width="2" height="12" fill="white"/>
-                    </clipPath>
-                  </defs>
-                </svg>
-              </span>
-            </span>
+            <span class="info-img-circle"></span>
         </button>
       </div>
       <!-- Сервисная информация конец -->
@@ -418,7 +389,7 @@
         <div class="about-us-info">
           <h3 class="about-us-title" id="about-us-title">О нас</h3>
           <p class="about-us-text">
-            Огромный выбор гаджетов не оставит равнодушным гика, который есть в
+            Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в
             каждом из нас.
           </p>
           <p class="about-us-text">
@@ -583,41 +554,40 @@
               <span class="visually-hidden">Закрыть</span>
             </button>
           </div>
-          <div class="modal-item-wrap">
-            <form class="modal-auth-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label class="modal-form-title" for="modal-name-auth">Ваше имя:</label>
-                <input class="input-field modal-auth-form-field modal-form-field " type="text" id="modal-name-auth" name="modal-name-auth" placeholder="Введите имя" required>
-                <span class="modal-name-invalid-text">Добавьте имя</span>
-            </form>
-            <form class="modal-auth-form modal-email-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="modal-form-title modal-email-form-title" for="modal-email-auth">Ваше e-mail:</label>
-              <input class="input-field modal-email-form-field modal-form-field" type="email" id="modal-email-auth" name="modal-email-auth" placeholder="почта" required>
-              <span class="modal-email-invalid-text">Забавный у вас адрес</span>
-            </form>
-          </div>
-          <div class="modal-item-wrap">
-            <form class="modal-product-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label class="modal-form-title" for="modal-product-name">Что нужно привезти:</label>
-                <input class="input-field modal-product-form-field" type="text" id="modal-product-name" name="modal-product-name" placeholder="В свободной форме">
-            </form>
-            <div class="modal-product-amount">
-
-              <div class="modal-product-amount-form">
-                <div class="modal-form-title">
-                  Количество:
-                  <span  class="tooltip">
-                    <button class="form-button tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                      <svg  class="tooltip-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
-                        <circle cx="13" cy="13" r="13" fill="#FFE17F"/>
-                        <path fill="#000" d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z"/>
-                      </svg>
-                      <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                    </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
-                  </span>
-                </div>
-                <div class="product-amount-wrap">
-                  <form class="product-amount-wrap"  action="https://echo.htmlacademy.ru/" method="post">
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-item-wrap">
+              <p class="modal-auth-form">
+                  <label class="modal-form-title" for="modal-name-auth">Ваше имя:</label>
+                  <input class="input-field modal-auth-form-field modal-form-field " type="text" id="modal-name-auth" name="modal-name-auth" placeholder="Введите имя" required>
+                  <span class="modal-name-invalid-text">Добавьте имя</span>
+              </p>
+              <p class="modal-auth-form modal-email-form">
+                <label class="modal-form-title modal-email-form-title" for="modal-email-auth">Ваш e-mail:</label>
+                <input class="input-field modal-email-form-field modal-form-field" type="email" id="modal-email-auth" name="modal-email-auth" placeholder="почта" required>
+                <span class="modal-email-invalid-text">Забавный у вас адрес</span>
+              </p>
+            </div>
+            <div class="modal-item-wrap">
+              <p class="modal-product-form">
+                  <label class="modal-form-title" for="modal-product-name">Что нужно привезти:</label>
+                  <input class="input-field modal-product-form-field" type="text" id="modal-product-name" name="modal-product-name" placeholder="В свободной форме" required>
+              </p>
+              <div class="modal-product-amount">
+                <div class="modal-product-amount-form">
+                  <div class="modal-form-title">
+                    <label  class="modal-form-title" for="modal-product-amount">Количество:</label>
+                    <span  class="tooltip">
+                      <button class="form-button tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                        <svg  class="tooltip-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
+                          <circle cx="13" cy="13" r="13" fill="#FFE17F"/>
+                          <path fill="#000" d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z"/>
+                        </svg>
+                        <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+                    </span>
+                  </div>
+                  <div class="product-amount-wrap">
                     <button class="form-button modal-button modal-button-del" type="button">
                       <span class="visually-hidden">Убавить</span>
                     </button>
@@ -625,13 +595,12 @@
                     <button class="form-button modal-button modal-button-add" type="button">
                       <span class="visually-hidden">Добавить</span>
                     </button>
-                  </form>
+                  </div>
                 </div>
               </div>
-
             </div>
-          </div>
-          <button class="button-all choose-send modal-button-send" type="submit">Отправить</button>
+            <button class="button-all choose-send modal-button-send" type="submit">Отправить</button>
+          </form>
         </div>
       </div>
     </div>

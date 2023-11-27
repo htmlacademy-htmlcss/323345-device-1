@@ -84,7 +84,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   font-weight: 800;
-  letter-spacing: 3.2px;
+  letter-spacing: 3.6px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -284,11 +284,10 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 280px;
-  height: 50px;
-  margin: 20px;
-  padding: 0;
+  margin: 20px auto;
+  padding: 14.5px 25px;
   font-family: "Raleway", sans-serif;
+  font-size: 18px;
   font-weight: 800;
   letter-spacing: 3.6px;
   text-transform: uppercase;
@@ -441,10 +440,18 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  gap: 30px;
-  margin-left: 60px;
+  gap: 17px;
   font-size: 16px;
   line-height: 18px;
+  padding-left: 4px;
+}
+
+.product-catalog:nth-child(1) {
+  margin-left: 59px;
+}
+
+.product-catalog:nth-last-child(1) {
+  margin-left: 10px;
 }
 
 .product-navigation-wrap {
@@ -453,10 +460,11 @@ body {
   width: 1160px;
   height: 148px;
   display: none;
-  gap: 4px;
   background-color: #ffe17f;
   top: 60px;
   left: -60px;
+  padding-top: 5px;
+  gap: 56px;
 }
 
 .catalog-button:focus + .product-navigation-wrap {
@@ -703,7 +711,6 @@ body {
 }
 
 .products-navigation {
-  padding: 0 140px;
   max-width: 1160px;
   margin: 0 auto;
   margin-bottom: 83px;
@@ -733,6 +740,7 @@ body {
   gap: 34px;
   width: 694px;
   margin-right: 64px;
+  margin-left: 20px;
   padding-top: 13px;
   padding-bottom: 13px;
 }
@@ -891,7 +899,8 @@ body {
   outline: 2px solid #af4fff;
 }
 
-.delivery-car-img {
+.delivery-car-img::before {
+  content: "";
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -901,10 +910,11 @@ body {
   align-items: center;
   width: 125px;
   height: 100px;
-  background: #ffe17f;
+  background: url("../images/icon/delivey-button-car-img.svg") no-repeat center center #ffe17f;
 }
 
-.info-img-circle {
+.info-img-circle::before {
+  content: "";
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -916,7 +926,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #dcdcdc80;
+  background: url("../images/icon/delivery-button-info-image.svg") no-repeat center center #dcdcdc80;
 }
 
 .info-delivery {
@@ -982,7 +992,6 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  gap: 150px;
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 140px;
@@ -1042,6 +1051,7 @@ body {
   -ms-flex-pack: start;
   justify-content: flex-start;
   gap: 28px;
+  width: 520px;
 }
 
 .contacts {
@@ -1053,6 +1063,7 @@ body {
   -ms-flex-align: start;
   align-items: flex-start;
   gap: 30px;
+  width: 532px;
 }
 
 .about-us-title {
@@ -1180,7 +1191,8 @@ body {
 
 .newsletter-text {
   margin: 26px;
-  padding-top: 12px;
+  padding-top: 10px;
+  width: 560px;
 }
 
 .newsletter-wrap {
@@ -1208,6 +1220,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 80px;
+  gap: 223px;
 }
 
 /* Футер */
@@ -2100,6 +2113,15 @@ body {
 }
 
 .catalog-pagination-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0;
   min-width: 40px;
   min-height: 40px;
@@ -2179,7 +2201,7 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 72px 80px;
+  padding: 62px 70px 66px 70px;
   color: rgba(0, 0, 0, 1);
   background-color: #ffffff;
   border: 10px solid #000000;
@@ -2215,6 +2237,7 @@ body {
   font-style: normal;
   font-weight: 800;
   line-height: 50px;
+  letter-spacing: -0.5px;
 }
 
 .modal-close-button {
@@ -2262,6 +2285,8 @@ body {
   -webkit-box-direction: normal;
   flex-direction: column;
   gap: 14px;
+  margin: 0;
+  margin-bottom: 42px;
 }
 
 .modal-button {
@@ -2313,10 +2338,14 @@ body {
   -webkit-box-direction: normal;
   flex-direction: column;
   gap: 14px;
+  margin: 0;
+  margin-bottom: 42px;
 }
 
 .modal-button-send {
   margin-right: auto;
+  width: 200px;
+  margin-top: 9px;
 }
 
 .modal-form-field {
@@ -2331,6 +2360,16 @@ body {
   margin-bottom: 20px;
   background: url("../images/icon/user-grey.svg") no-repeat right 20px center;
   background-color: #f0f0f0;
+}
+
+.modal-form-field,
+.modal-product-form-field,
+.modal-product-amount-field {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  font-style: normal;
 }
 
 .input-field:focus {
@@ -2359,8 +2398,12 @@ body {
   margin: 0;
 }
 
+.modal-product-amount-field {
+  -moz-appearance: textfield;
+}
+
 .modal-email-form-field:invalid {
-  outline: 2px solid #ff3d3d;
+  border: 2px solid #ff3d3d;
 }
 
 .modal-email-form {
@@ -2488,8 +2531,8 @@ body {
 
 .popover {
   position: absolute;
-  top: 30px;
-  right: -80px;
+  top: 36px;
+  right: -77px;
   z-index: 2;
   box-sizing: border-box;
   width: 320px;
@@ -2532,13 +2575,13 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 20px;
+  padding: 21px;
   border-bottom: 1px solid #1a1a1a;
 }
 
 .cart-product-item {
   margin: 0;
-  padding-left: 61px;
+  padding-left: 62px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -2561,7 +2604,13 @@ body {
   justify-content: space-between;
   padding: 0 20px;
   height: 44px;
+  margin-top: 2px;
   background-color: #1a1a1a;
+}
+
+.cart-product-sum,
+.cart-price-sum {
+  letter-spacing: -1px;
 }
 
 .popover::before {
@@ -2570,6 +2619,6 @@ body {
   width: 14px;
   height: 6px;
   top: -6px;
-  right: 156px;
+  right: 152px;
   background: url("../images/icon/triangle.svg") no-repeat center center;
 }
