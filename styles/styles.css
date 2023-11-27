@@ -366,6 +366,7 @@ body {
 }
 
 .shop-info-wrap {
+  position: relative;
   display: grid;
   -ms-grid-columns: 300px 1fr;
   grid-template-columns: 300px 1fr;
@@ -391,7 +392,6 @@ body {
 /* Выпадающее меню */
 
 .catalog-button {
-  position: relative;
   z-index: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -455,8 +455,8 @@ body {
   display: none;
   gap: 4px;
   background-color: #ffe17f;
-  top: 178px;
-  left: 0;
+  top: 60px;
+  left: -60px;
 }
 
 .catalog-button:focus + .product-navigation-wrap {
@@ -1720,6 +1720,16 @@ body {
   background-color: transparent;
   border: none;
   appearance: textfield;
+}
+
+.catalog-filter-label:hover,
+.catalog-filter-label:active {
+  opacity: 1;
+}
+
+.range-input:focus {
+  opacity: 1;
+  outline: 2px solid #af4fff;
 }
 
 .range-input::-webkit-outer-spin-button,
